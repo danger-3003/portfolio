@@ -29,7 +29,7 @@ module.exports = {
       },
       boxShadow: {
         customShadow: "0 0 20px 1px rgba(0, 49, 97, 0.15)",
-      }
+      },
     },
   },
   plugins: [],

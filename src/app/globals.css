@@ -52,6 +52,10 @@
   animation: animateThree 5s infinite ease-in-out;
 }
 
+.custom-transition {
+  @apply duration-500 transition-all
+}
+
 :root {
   --color-bg: #ffffff;
   --color-text: #000000;

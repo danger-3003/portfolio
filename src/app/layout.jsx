@@ -33,8 +33,27 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${poppins?.variable} ${nunito?.variable} ${sheppards?.variable} bg-background text-text`}>
+    <html suppressHydrationWarning lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const theme = localStorage.getItem('theme-storage');
+                  if (theme) {
+                    const value = JSON.parse(theme).state?.theme;
+                    if (value === 'dark') {
+                      document.documentElement.classList.add('dark');
+                    }
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className={`${poppins?.variable} ${nunito?.variable} ${sheppards?.variable} bg-background text-text custom-transition`}>
         <LenisWrapper>
           {children}
         </LenisWrapper>

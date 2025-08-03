@@ -10,7 +10,7 @@ export const useThemeStore = create(
       };
 
       return {
-        theme: "light",
+        theme: undefined,
         setTheme: () => {
           const current = get().theme;
           const newTheme = current === "light" ? "dark" : "light";

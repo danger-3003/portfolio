@@ -22,7 +22,7 @@ function AboutSection() {
               <img src="/assets/profile/profile.svg" alt="Profile" className='w-[70%] max-w-96 md:w-full lg:w-[90%]' />
             </div>
           </div>
-          <div className='border-l-2 pl-1.5 py-5 mt-10 border-black dark:border-white text-primary-400 flex items-start justify-start flex-col gap-2 w-full sm:w-[65%] lg:w-2/3'>
+          <div className='border-l-2 pl-1.5 py-5 mt-10 border-black dark:border-white text-primary-400 flex items-start justify-start flex-col gap-2 w-full sm:w-[65%] lg:w-2/3 custom-transition'>
             <div className='flex items-start justify-start flex-row text-3xl'>
               <span className='text-[3.5rem] md:text-[4.5rem] font-poppins pr-1.5'>❝</span><p className='w-auto'>Design is not just what it looks like and feels like. Design is how it works.<span className='text-xl font-poppins'>❞</span></p>
             </div>
