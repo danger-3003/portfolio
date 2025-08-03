@@ -31,9 +31,13 @@ function Navbar() {
     setOpenMenu((prev) => (prev === false ? true : false));
   }
 
+  const handleCloseMenu = () => {
+    setOpenMenu(false);
+  }
+
   return (
     <>
-      <ClickOutside onClickOutside={handleOpenMenu}>
+      <ClickOutside onClickOutside={handleCloseMenu}>
         <div className='fixed top-0 z-10 flex items-center justify-center w-full bg-gradient-to-l from-background/80 dark:from-black/30 dark:to-black/30 to-background/80 backdrop-blur-lg shadow-customShadow'>
           <nav className='h-16 max-w-[80rem] w-full px-5 relative flex items-center justify-center flex-row'>
             <p className='font-sheppard text-3xl bg-gradient-to-r from-primary-400 to-blue-500 text-transparent bg-clip-text absolute left-5 sm:left-8 pr-2'>
@@ -88,7 +92,7 @@ function Navbar() {
             </div>
           </nav >
         </div >
-        <div className={`flex md:hidden fixed top-0 z-[9] h-44 left-0 items-center ${openMenu ? "top-16" : "-top-72"} w-full justify-center flex-col gap-4 text-primary-400 bg-gradient-to-l from-background/80 to-background/80 dark:from-black/30 dark:to-black/30 backdrop-blur-lg shadow-customShadow transition-all duration-500`}>
+        <div className={`flex md:hidden fixed z-[9] h-44 left-0 items-center ${openMenu ? "top-16" : "-top-72"} w-full justify-center flex-col gap-4 text-primary-400 bg-gradient-to-l from-background/80 to-background/80 dark:from-black/30 dark:to-black/30 backdrop-blur-lg shadow-customShadow transition-all duration-500`}>
           {
             navbarURL.map((item, key) => (
               <div key={key} className='group'>
