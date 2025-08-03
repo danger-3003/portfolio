@@ -1,3 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Bitcount+Single:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes animateOne {
+
+  0%,
+  100% {
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes animateTwo {
+
+  0%,
+  100% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes animateThree {
+
+  0%,
+  100% {
+    transform: scale(1.5);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.animate-one {
+  animation: animateOne 3.5s infinite ease-in-out;
+}
+
+.animate-two {
+  animation: animateTwo 3.5s infinite ease-in-out;
+}
+
+.animate-three {
+  animation: animateThree 5s infinite ease-in-out;
+}
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-primary-100: #D1DCDF;
+  --color-primary-200: #AFC7CE;
+  --color-primary-300: #003161;
+  --color-primary-400: #000B58;
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-bg: #0d0d0d;
+  --color-text: #ffffff;
+  --color-primary-100: #1a1a2e;
+  --color-primary-200: #16213e;
+  --color-primary-300: #0f3460;
+  --color-primary-400: #d0b0ff;
+}
