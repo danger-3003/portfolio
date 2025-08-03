@@ -3,8 +3,15 @@ import React from 'react'
 import { Heading, Text } from "../ui/Text";
 import LinkButton from "../ui/Button/LinkButton";
 import HeaderImage from "./HeaderImage";
+import { useRouter } from 'next/navigation';
 
 function HeaderContent() {
+
+  const router = useRouter();
+  const handleNavigate = () => {
+    router.push("/my-work")
+  }
+
   return (
     <>
       {/* aff2ea */}
@@ -25,7 +32,7 @@ function HeaderContent() {
               />
               <LinkButton
                 target={""}
-                onClick={() => { console.log("My work") }}
+                onClick={handleNavigate}
                 text={"My work"}
               />
             </div>
