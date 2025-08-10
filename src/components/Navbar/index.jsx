@@ -42,7 +42,7 @@ function Navbar() {
               {
                 navbarURL.map((item, key) => (
                   <div key={key} className='group'>
-                    <Text onClick={() => (item.click(), handleOpenMenu())} className={`cursor-pointer px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400"} custom-transition`}>
+                    <Text animation='none' onClick={() => (item.click(), handleOpenMenu())} className={`cursor-pointer px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400 custom-transition`}>
                       <TextScrambler text={item.title} duration={1000} />
                     </Text>
                   </div>
@@ -91,7 +91,7 @@ function Navbar() {
           {
             navbarURL.map((item, key) => (
               <div key={key} className='group'>
-                <Text onClick={() => (item.onClick(), handleOpenMenu())} className={`cursor-pointer px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400"} custom-transition`}>
+                <Text onClick={() => (item.click(), handleOpenMenu())} className={`cursor-pointer px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400"} custom-transition`}>
                   <TextScrambler text={item.title} duration={1000} />
                 </Text>
               </div>

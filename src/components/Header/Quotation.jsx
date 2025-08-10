@@ -21,7 +21,7 @@ function Quotation() {
       scrollTrigger: {
         trigger: section,
         start: "top top",
-        end: "+=500%",
+        end: "+=400%",
         scrub: true,
         pin: true,
       },
@@ -38,23 +38,26 @@ function Quotation() {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="h-screen flex items-center justify-center relative overflow-hidden w-full"
-    >
-      {/* Blobs - colors unchanged */}
-      <div className="bg-violet-400 size-80 rounded-full blur-[6rem] absolute -mt-20 -ml-[25rem] animate-one"></div>
-      <div className="bg-pink-700 size-[26rem] rounded-full blur-[6rem] absolute ml-60 -mt-40 animate-two"></div>
-      <div className="bg-orange-500 size-96 rounded-full blur-[6rem] absolute mt-20 animate-three"></div>
-
-      {/* Content - text unchanged */}
-      <div
-        ref={contentRef}
-        className="text-background max-w-[40rem] text-[3rem] sm:text-[5rem] text-center font-bitcount font-light tracking-tight leading-[4rem] sm:leading-[5rem] w-full"
+    <>
+      <div id="homeSection" className="absolute top-0"></div>
+      <section
+        ref={sectionRef}
+        className="h-screen flex items-center justify-center relative overflow-hidden w-full"
       >
-        Every pixel has a purpose.
-      </div>
-    </section>
+        {/* Blobs - colors unchanged */}
+        <div className="bg-violet-400 size-80 rounded-full blur-[6rem] absolute -mt-20 -ml-[25rem] animate-one"></div>
+        <div className="bg-pink-700 size-[26rem] rounded-full blur-[6rem] absolute ml-60 -mt-40 animate-two"></div>
+        <div className="bg-orange-500 size-96 rounded-full blur-[6rem] absolute mt-20 animate-three"></div>
+
+        {/* Content - text unchanged */}
+        <div
+          ref={contentRef}
+          className="text-background max-w-[40rem] text-[3rem] sm:text-[5rem] text-center font-bitcount font-light tracking-tight leading-[4rem] sm:leading-[5rem] w-full"
+        >
+          Every pixel has a purpose.
+        </div>
+      </section>
+    </>
   );
 }
 
