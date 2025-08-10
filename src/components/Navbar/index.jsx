@@ -53,14 +53,13 @@ function Navbar() {
               <div className='hidden sm:flex items-start justify-center gap-2'>
                 <IconButton
                   className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition"
-                  onClick={() => { console.log("Linkedin") }}
+                  onClick={() => { window.open("https://www.linkedin.com/in/hima-varsha-barla", "_blank") }}
                 >
                   <FontAwesomeIcon icon={faLinkedin} className='size-[60%] text-primary-300 group-hover:text-background dark:group-hover:text-black dark:text-white custom-transition' />
                 </IconButton>
                 <IconButton
                   className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition"
-                  onClick={() => { console.log("Linkedin") }}
-                >
+                  onClick={() => { window.open("mailto:varshahima46@gmail.com", "_blank") }}                >
                   <FontAwesomeIcon icon={faEnvelope} className='size-[60%] text-primary-300 group-hover:text-background dark:group-hover:text-black dark:text-white custom-transition' />
                 </IconButton>
                 <IconButton
@@ -102,13 +101,13 @@ function Navbar() {
           <div className='flex sm:hidden items-center justify-evenly gap-2 w-full max-w-60 border-text border bg-gradient-to-l from-background/80 dark:from-black/30 dark:to-black/30 to-background/80 backdrop-blur-lg shadow-customShadow h-full rounded-xl'>
             <IconButton
               className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition"
-              onClick={() => { console.log("Linkedin") }}
+              onClick={() => { window.open("https://www.linkedin.com/in/hima-varsha-barla", "_blank") }}
             >
               <FontAwesomeIcon icon={faLinkedin} className='size-[60%] text-primary-300 group-hover:text-background dark:group-hover:text-black dark:text-white custom-transition' />
             </IconButton>
             <IconButton
               className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition"
-              onClick={() => { console.log("Linkedin") }}
+              onClick={() => { window.open("mailto:varshahima46@gmail.com", "_blank") }}
             >
               <FontAwesomeIcon icon={faEnvelope} className='size-[60%] text-primary-300 group-hover:text-background dark:group-hover:text-black dark:text-white custom-transition' />
             </IconButton>

@@ -32,11 +32,14 @@ export default function Quotation() {
       transformOrigin: "49.5% center",
     });
 
+    const isMobile = window.innerWidth <= 640;
+    const scrollEnd = isMobile ? "+=200%" : "+=300%";
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: section,
         start: "top top",
-        end: "+=400%",
+        end: scrollEnd,
         scrub: true,
         pin: true,
       },
@@ -44,7 +47,7 @@ export default function Quotation() {
 
     tl.addLabel("start", 0)
       .to(content, { scale: 10, duration: 1, ease: "power3.inOut" }, "start")
-      .to(red, { scale: 500, duration: 1, ease: "power3.inOut" }, "start+=0.2")
+      .to(red, { scale: isMobile ? 300 : 500, duration: 1, ease: "power3.inOut" }, "start+=0.2")
       .to(red, { opacity: 1, duration: 0.1 }, "start+=0.3");
 
     return () => {

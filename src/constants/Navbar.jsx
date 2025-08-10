@@ -7,17 +7,28 @@ export function useNavbarUrls() {
   const router = useRouter();
   const pathname = usePathname();
 
-  // Scroll to section if coming from another page
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const targetId = sessionStorage.getItem("scrollToId");
-      if (targetId && pathname === "/") {
+    if (typeof window === "undefined") return;
+
+    const targetId = sessionStorage.getItem("scrollToId");
+    if (targetId && pathname === "/") {
+      let attempts = 0;
+      const maxAttempts = 20;
+
+      const tryScroll = () => {
         const el = document.getElementById(targetId);
         if (el) {
           el.scrollIntoView({ behavior: "smooth" });
+          sessionStorage.removeItem("scrollToId");
+        } else if (attempts < maxAttempts) {
+          attempts++;
+          setTimeout(tryScroll, 100);
+        } else {
+          sessionStorage.removeItem("scrollToId");
+          console.warn(`Element with id '${targetId}' not found for scrolling.`);
         }
-        sessionStorage.removeItem("scrollToId");
-      }
+      };
+      setTimeout(tryScroll, 100);
     }
   }, [pathname]);
 
@@ -25,7 +36,12 @@ export function useNavbarUrls() {
     if (typeof window === "undefined") return;
 
     if (pathname === "/") {
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      } else {
+        console.warn(`Element with id '${id}' not found on home page.`);
+      }
     } else {
       sessionStorage.setItem("scrollToId", id);
       router.push("/");
