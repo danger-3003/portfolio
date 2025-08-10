@@ -9,13 +9,14 @@ import { useThemeStore } from "@/store/ThemeStore";
 export default function MainLayout({ children }) {
   const cursorOut = useRef(null);
   const cursorIn = useRef(null);
-  const theme = useThemeStore((state) => state.theme);
+  const { theme, setTheme } = useThemeStore();
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
   }, [theme]);
 
   useEffect(() => {
+    setTheme();
     const handleMouseMove = (e) => {
       // Move OUTER cursor first (immediate)
       gsap.to(cursorOut.current, {
