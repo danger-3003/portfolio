@@ -16,7 +16,12 @@ export default function MainLayout({ children }) {
   }, [theme]);
 
   useEffect(() => {
-    setTheme();
+    if (theme) {
+      null
+    }
+    else {
+      setTheme();
+    }
     const handleMouseMove = (e) => {
       // Move OUTER cursor first (immediate)
       gsap.to(cursorOut.current, {
