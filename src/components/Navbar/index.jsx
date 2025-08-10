@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import { navbarURL } from "@/constants/Navbar";
+import { useNavbarUrls } from "@/constants/Navbar";
 import { Text } from '../ui/Text';
 import IconButton from '../ui/Button/IconButton';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -14,9 +14,9 @@ import ClickOutside from '../ui/ClickOutside';
 
 function Navbar() {
 
-  // const [theme, setTheme] = useState("light");
   const { theme, setTheme } = useThemeStore();
   const [openMenu, setOpenMenu] = useState(false);
+  const navbarURL = useNavbarUrls();
 
   const handleSetTheme = () => {
     setTheme();
@@ -42,7 +42,7 @@ function Navbar() {
               {
                 navbarURL.map((item, key) => (
                   <div key={key} className='group'>
-                    <Text onClick={() => (item.onClick(), handleOpenMenu())} className={`cursor-pointer px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400"} custom-transition`}>
+                    <Text onClick={() => (item.click(), handleOpenMenu())} className={`cursor-pointer px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400"} custom-transition`}>
                       <TextScrambler text={item.title} duration={1000} />
                     </Text>
                   </div>

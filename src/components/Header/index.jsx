@@ -1,14 +1,13 @@
-"use client"
-import HeaderContent from "./HeaderContent";
+"use client";
+
 import Quotation from "./Quotation";
+import HeaderContent from "./HeaderContent";
 
 function Header() {
   return (
     <>
-      <div id="homeSection">
-        <Quotation />
-        <HeaderContent />
-      </div>
+      <Quotation />
+      <HeaderContent />
     </>
   );
 }
