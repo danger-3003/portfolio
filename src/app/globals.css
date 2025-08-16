@@ -74,3 +74,18 @@
   --color-primary-300: #0f3460;
   --color-primary-400: #d0b0ff;
 }
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* For IE/Edge Legacy */
+body {
+  -ms-overflow-style: none;
+}

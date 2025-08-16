@@ -1,11 +1,11 @@
-import { Poppins, Nunito, Mrs_Sheppards } from "next/font/google";
+import { Playfair_Display, Nunito, Mrs_Sheppards, Montserrat } from "next/font/google";
 import "./globals.css";
 import LenisWrapper from "@/components/ui/Animation/LenisWrapper";
 
-const poppins = Poppins({
+const poppins = Playfair_Display({
   variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800']
 });
 
 const nunito = Nunito({

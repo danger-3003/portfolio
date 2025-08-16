@@ -59,7 +59,7 @@ export default function Quotation() {
   return (
     <>
       <div id="homeSection" className="w-full"></div>
-      <section ref={sectionRef} className="h-screen flex items-center justify-center relative overflow-hidden w-full">
+      <section ref={sectionRef} className="h-screen flex items-center justify-center flex-col relative overflow-hidden w-full">
         <div className="bg-violet-400 size-80 rounded-full blur-[6rem] absolute -mt-20 -ml-[25rem] animate-one"></div>
         <div className="bg-pink-700 size-[26rem] rounded-full blur-[6rem] absolute ml-60 -mt-40 animate-two"></div>
         <div className="bg-orange-500 size-96 rounded-full blur-[6rem] absolute mt-20 animate-three"></div>
@@ -74,6 +74,9 @@ export default function Quotation() {
           <div>Every pixel</div>
           <div>has a</div>
           <div>purpose.</div>
+        </div>
+        <div className="w-full text-text absolute bottom-0 flex items-center justify-center mb-5 font-nunito font-light text-sm tracking-widest">
+          <p>Scroll For More</p>
         </div>
       </section>
     </>
