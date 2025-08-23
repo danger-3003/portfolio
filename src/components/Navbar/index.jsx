@@ -88,7 +88,7 @@ function Navbar({ scrollProgress }) {
             </div>
           </nav >
           <div className='w-full'>
-            <div className={`h-[1px] bg-black dark:bg-white duraiton-500`} style={{ width: `${scrollProgress}%` }}></div>
+            <div className={`h-[1px] bg-primary-400 duraiton-500`} style={{ width: `${scrollProgress}%` }}></div>
           </div>
         </div >
         <div className={`flex md:hidden fixed z-[9] h-44 left-0 items-center ${openMenu ? "top-16" : "-top-72"} w-full justify-center flex-col gap-4 text-primary-400 bg-gradient-to-l from-background/80 to-background/80 dark:from-black/30 dark:to-black/30 backdrop-blur-lg shadow-customShadow custom-transition`}>
