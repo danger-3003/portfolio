@@ -2,6 +2,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ArrowDown } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,14 +48,21 @@ export default function Quotation() {
 
     tl.addLabel("start", 0)
       .to(content, { scale: 10, duration: 1, ease: "power3.inOut" }, "start")
-      .to(red, { scale: isMobile ? 300 : 500, duration: 1, ease: "power3.inOut" }, "start+=0.2")
-      .to(red, { opacity: 1, duration: 0.1 }, "start+=0.3");
+      .to(red, { scale: isMobile ? 200 : 400, duration: 1, ease: "power3.inOut" }, "start+=0.2")
+      .to(red, { opacity: 1, duration: 0.1 }, "start+=0.2");
 
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
       tl.kill();
     };
   }, []);
+
+  const scrollDown = () => {
+    const el = document.getElementById("aboutSection");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 
   return (
     <>
@@ -75,8 +83,11 @@ export default function Quotation() {
           <div>has a</div>
           <div>purpose.</div>
         </div>
-        <div className="w-full text-text absolute bottom-0 flex items-center justify-center mb-5 font-nunito font-light text-sm tracking-widest">
-          <p>Scroll For More</p>
+        <div className="w-full text-text absolute bottom-0 flex items-center justify-center mb-16 sm:mb-5 font-nunito text-sm tracking-widest">
+          <div className="flex items-center justify-center" onClick={() => { scrollDown(); console.log("clicked") }}>
+            <p>Scroll For More</p>
+            <ArrowDown width={14} className="-mt-0.5 ml-0.5" />
+          </div>
         </div>
       </section>
     </>

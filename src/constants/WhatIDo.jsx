@@ -6,12 +6,12 @@ export const WhatIDoCardInfo = [
   },
   {
     title: "Designing",
-    description: "Crafting clean, intuitive, and user-friendly interfaces that enhance overall user experience.",
+    description: "Crafting clean and user-friendly interfaces that enhance overall user experience.",
     image: "assets/profile/Wireframe.jpg",
   },
   {
     title: "Testing",
-    description: "Designing and testing interfaces with a focus on understanding user needs, behaviors, and preferences.",
+    description: "Designing and testing interfaces with user needs, behaviors, and preferences.",
     image: "assets/profile/Testing.jpg",
   }
 ]

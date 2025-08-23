@@ -12,7 +12,7 @@ import TextScrambler from '../ui/Animation/TextScrambler';
 import { useThemeStore } from '@/store/ThemeStore';
 import ClickOutside from '../ui/ClickOutside';
 
-function Navbar() {
+function Navbar({ scrollProgress }) {
 
   const { theme, setTheme } = useThemeStore();
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,7 +33,7 @@ function Navbar() {
   return (
     <>
       <ClickOutside onClickOutside={handleCloseMenu}>
-        <div className='fixed top-0 z-10 flex items-center justify-center w-full bg-gradient-to-l from-background/80 dark:from-black/30 dark:to-black/30 to-background/80 backdrop-blur-lg shadow-customShadow duration-500 transition-colors'>
+        <div className='fixed top-0 z-10 flex items-center justify-center flex-col w-full bg-gradient-to-l from-background/80 dark:from-black/30 dark:to-black/30 to-background/80 backdrop-blur-lg shadow-customShadow duration-500 transition-colors'>
           <nav className='h-16 max-w-[80rem] w-full px-5 relative flex items-center justify-center flex-row'>
             <p className='font-sheppard text-3xl bg-gradient-to-r from-primary-400 to-blue-500 text-transparent bg-clip-text absolute left-5 sm:left-8 pr-2'>
               <TextScrambler text={"Hima Varsha"} />
@@ -42,9 +42,11 @@ function Navbar() {
               {
                 navbarURL.map((item, key) => (
                   <div key={key} className='group'>
-                    <Text animation='none' onClick={() => (item.click(), handleOpenMenu())} className={`cursor-pointer px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400 custom-transition`}>
-                      <TextScrambler text={item.title} duration={1000} />
-                    </Text>
+                    <button onClick={() => (item.click(), handleOpenMenu())} >
+                      <Text animation='none' className={`px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400 custom-transition`}>
+                        <TextScrambler text={item.title} duration={1000} />
+                      </Text>
+                    </button>
                   </div>
                 ))
               }
@@ -85,6 +87,9 @@ function Navbar() {
               </div>
             </div>
           </nav >
+          <div className='w-full'>
+            <div className={`h-[1px] bg-black dark:bg-white duraiton-500`} style={{ width: `${scrollProgress}%` }}></div>
+          </div>
         </div >
         <div className={`flex md:hidden fixed z-[9] h-44 left-0 items-center ${openMenu ? "top-16" : "-top-72"} w-full justify-center flex-col gap-4 text-primary-400 bg-gradient-to-l from-background/80 to-background/80 dark:from-black/30 dark:to-black/30 backdrop-blur-lg shadow-customShadow custom-transition`}>
           {
@@ -126,7 +131,7 @@ function Navbar() {
             </IconButton>
           </div>
         </div>
-      </ClickOutside>
+      </ClickOutside >
     </>
   )
 }
