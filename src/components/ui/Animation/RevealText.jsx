@@ -7,8 +7,8 @@ import SplitType from 'split-type';
 
 export default function RevealText({
   children,
-  bgColor = '#ccc',
-  fgColor = '#000',
+  bgColor = '',
+  fgColor = '',
   className = '',
 }) {
   const textRef = useRef(null);
@@ -18,15 +18,15 @@ export default function RevealText({
 
     gsap.registerPlugin(ScrollTrigger);
 
-    const split = new SplitType(textRef.current, { types: 'chars' });
+    const split = new SplitType(textRef.current, { types: 'words' });
 
     gsap.fromTo(
-      split.chars,
+      split.words,
       { color: bgColor },
       {
         color: fgColor,
         duration: 0.3,
-        stagger: 0.02,
+        stagger: 0.08,
         scrollTrigger: {
           trigger: textRef.current,
           start: 'top 90%',

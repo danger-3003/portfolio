@@ -2,13 +2,19 @@
 
 import React, { useEffect } from 'react'
 import { Heading, Text } from '../ui/Text'
+import RevealText from '../ui/Animation/RevealText'
+import { useThemeStore } from '@/store/ThemeStore'
 
 function AboutSection() {
+  const theme = useThemeStore(state => state.theme)
+  const bgColor = theme === "dark" ? "#1a1a2e" : "#AFC7CE"
+  const fgColor = theme === "dark" ? "#ffffff" : "#000B58"
+
   return (
     <>
       <div className='w-full overflow-hidden flex items-center justify-center flex-col pb-10 pt-16 md:pt-20 md:pb-16 px-5 sm:px-8 md:px-10'>
         <div className='max-w-[80rem] w-full '>
-          <div className='w-full flex items-center justify-center flex-col-reverse md:flex-row gap-10 lg:gap-32'>
+          <div className='w-full flex items-center justify-center flex-col-reverse md:flex-row-reverse gap-10 lg:gap-32'>
             <div className='sm:basis-[60%] lg:basis-2/3 flex items-start justify-start flex-col gap-7 lg:gap-10'>
               <Heading data-aos="fade-right" className="text-3xl md:text-4xl lg:text-5xl">Who I Am?</Heading>
               <Text data-aos="fade-right" data-aos-delay="100" className="">
@@ -23,10 +29,18 @@ function AboutSection() {
             </div>
           </div>
           <div className='border-l-2 pl-1.5 py-5 mt-10 border-black dark:border-white text-primary-400 flex items-start justify-start flex-col gap-2 w-full sm:w-[65%] lg:w-2/3 custom-transition overflow-hidden'>
-            <div className='flex items-start justify-start flex-row text-2xl md:text-3xl'>
-              <span data-aos="fade-right" data-aos-delay="200" className='text-[3.5rem] md:text-[4.5rem] pr-1.5'>❝</span><p className='w-auto font-poppins' data-aos="fade-right" data-aos-delay="200">Design is not just what it looks like and feels like. Design is how it works.<span className='text-xl font-poppins' data-aos="fade-right" data-aos-delay="200">❞</span></p>
-            </div>
-            <div className='pl-8'>
+            <RevealText
+              bgColor={bgColor}
+              fgColor={fgColor}
+              className='flex items-start justify-start flex-row text-2xl md:text-3xl'
+            >
+              <span data-aos="fade-right" data-aos-delay="200" className='text-[3.5rem] md:text-[4.5rem] pr-1.5'>❝</span>
+              <span className='w-auto font-poppins' data-aos="fade-right" data-aos-delay="200">
+                Design is not just what it looks like and feels like. Design is how it works.
+                <span className='text-xl font-poppins' data-aos="fade-right" data-aos-delay="200">❞</span>
+              </span>
+            </RevealText>
+            <div className='pl-[34px]'>
               <Text data-aos="fade-right" data-aos-delay="300">- Hima Varsha</Text>
             </div>
           </div>
