@@ -1,19 +1,28 @@
 "use client"
 
-import React from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 import AboutSection from './AboutSection'
-import WhatIDo from './WhatIDo'
+import WhatIDoScrollSection from './WhatIDoScrollSection'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import gsap from 'gsap'
+gsap.registerPlugin(ScrollTrigger);
 
 function About() {
+
   return (
-    <>
-      <div className='flex items-center justify-center'>
-        <div id='aboutSection' className='max-w-[80rem] w-full flex items-center justify-center flex-col'>
-          <AboutSection />
-          <WhatIDo />
-        </div>
+    <div className="flex flex-col items-center justify-center">
+      <div
+        id="aboutSection"
+        className="max-w-[80rem] w-full flex flex-col items-center justify-center"
+      >
+        <AboutSection />
       </div>
-    </>
+      <div
+        className="w-full"
+      >
+        <WhatIDoScrollSection />
+      </div>
+    </div >
   )
 }
 

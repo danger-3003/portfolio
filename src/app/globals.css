@@ -58,7 +58,7 @@
 
 :root {
   --color-bg: #ffffff;
-  --color-text: #000000;
+  --color-text: #191919;
   --color-primary-100: #D1DCDF;
   --color-primary-200: #AFC7CE;
   --color-primary-300: #003161;
@@ -67,7 +67,7 @@
 
 /* Dark mode overrides */
 .dark {
-  --color-bg: #0d0d0d;
+  --color-bg: #191919;
   --color-text: #ffffff;
   --color-primary-100: #1a1a2e;
   --color-primary-200: #16213e;

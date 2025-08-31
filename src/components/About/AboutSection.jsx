@@ -7,14 +7,14 @@ import { useThemeStore } from '@/store/ThemeStore'
 
 function AboutSection() {
   const theme = useThemeStore(state => state.theme)
-  const bgColor = theme === "dark" ? "#1a1a2e" : "#AFC7CE"
+  const bgColor = theme === "dark" ? "#475569" : "#AFC7CE"
   const fgColor = theme === "dark" ? "#ffffff" : "#000B58"
 
   return (
     <>
-      <div className='w-full overflow-hidden flex items-center justify-center flex-col pb-10 pt-16 md:pt-20 md:pb-16 px-5 sm:px-8 md:px-10'>
+      <div className='w-full overflow-hidden flex items-center justify-center flex-col pb-10 pt-16 md:py-20 px-5 sm:px-8 md:px-10'>
         <div className='max-w-[80rem] w-full '>
-          <div className='w-full flex items-center justify-center flex-col-reverse md:flex-row-reverse gap-10 lg:gap-32'>
+          <div className='w-full flex items-center justify-center flex-col-reverse md:flex-row gap-10 lg:gap-32'>
             <div className='sm:basis-[60%] lg:basis-2/3 flex items-start justify-start flex-col gap-7 lg:gap-10'>
               <Heading data-aos="fade-right" className="text-3xl md:text-4xl lg:text-5xl">Who I Am?</Heading>
               <Text data-aos="fade-right" data-aos-delay="100" className="">

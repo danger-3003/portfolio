@@ -79,9 +79,9 @@ export default function Quotation() {
     <>
       <div id="homeSection" className="w-full"></div>
       <section ref={sectionRef} className="h-screen flex items-center justify-center flex-col relative overflow-hidden w-full">
-        <div className="bg-violet-400 size-80 rounded-full blur-[6rem] absolute -mt-20 -ml-[25rem] animate-one"></div>
-        <div className="bg-pink-700 size-[26rem] rounded-full blur-[6rem] absolute ml-60 -mt-40 animate-two"></div>
-        <div className="bg-orange-500 size-96 rounded-full blur-[6rem] absolute mt-20 animate-three"></div>
+        <div className="bg-cyan-400 size-80 rounded-full blur-[6rem] absolute -mt-20 -ml-[25rem] animate-one"></div>
+        <div className="bg-[#D11C9F] size-[26rem] rounded-full blur-[6rem] absolute ml-60 -mt-40 animate-two"></div>
+        <div className="bg-[#AC52F2] size-96 rounded-full blur-[6rem] absolute mt-20 animate-three"></div>
         <div
           ref={redRef}
           className="w-1 h-1 bg-background rounded-full z-20 opacity-0 relative overflow-hidden flex items-center justify-center"
