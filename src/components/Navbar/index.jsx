@@ -103,7 +103,7 @@ function Navbar({ scrollProgress }) {
           }
         </div >
         <div className='w-full h-12 z-10 fixed bottom-3 px-5 flex items-center justify-center flex-row'>
-          <div className='flex sm:hidden items-center justify-evenly gap-2 w-full max-w-60 border-text border bg-gradient-to-l from-background/80 dark:from-black/30 dark:to-black/30 to-background/80 backdrop-blur-lg shadow-customShadow h-full rounded-xl'>
+          <div className='flex sm:hidden items-center justify-evenly gap-2 w-full max-w-60 border-text border bg-gradient-to-l from-white/50 dark:from-[#191919]/30 dark:to-[#191919]/30 to-white/50 backdrop-blur-lg shadow-customShadow h-full rounded-xl'>
             <IconButton
               className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition"
               onClick={() => { window.open("https://www.linkedin.com/in/hima-varsha-barla", "_blank") }}
