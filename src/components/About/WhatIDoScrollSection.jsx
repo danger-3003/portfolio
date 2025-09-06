@@ -4,6 +4,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { WhatIDoCardInfo } from "@/constants/WhatIDo";
 import { useThemeStore } from "@/store/ThemeStore";
 import { Heading, Text } from "../ui/Text";
+import BlurText from "../ui/Animation/BlurText";
 
 // Helper for SVG dash positions
 function getDashCoords(center, radius, angleDeg, dashLength) {
@@ -70,6 +71,10 @@ function WhatIDoScrollSection() {
   let progressRatio = scrollValue / totalProgressRange;
   progressRatio = Math.min(Math.max(progressRatio, 0), 1);
 
+  const handleAnimationComplete = () => {
+    console.log('Animation completed!');
+  };
+
   return (
     <div
       ref={containerRef}
@@ -81,7 +86,15 @@ function WhatIDoScrollSection() {
           {/* Left Title */}
           <div className="flex items-center justify-center flex-col text-center md:text-left">
             <Heading className="text-3xl md:text-4xl lg:text-5xl">
-              {WhatIDoCardInfo[activeIndex].title}
+              <BlurText
+                activeIndex={activeIndex}
+                text={WhatIDoCardInfo[activeIndex].title}
+                delay={50}
+                animateBy="words"
+                direction="bottom"
+                onAnimationComplete={handleAnimationComplete}
+                className=""
+              />
             </Heading>
           </div>
           {/* Circle with Progress Border and Dashes */}
@@ -189,10 +202,16 @@ function WhatIDoScrollSection() {
             </div>
           </div>
           {/* Right Description */}
-          <div className="flex items-center justify-center flex-col text-center md:text-left max-w-md">
-            <Text className="text-base px-5 text-center lg:text-left">
-              {WhatIDoCardInfo[activeIndex].description}
-            </Text>
+          <div className="flex items-center justify-center flex-col text-center lg:text-left max-w-md">
+            <BlurText
+              activeIndex={activeIndex}
+              text={WhatIDoCardInfo[activeIndex].description}
+              delay={5}
+              animateBy="words"
+              direction="bottom"
+              onAnimationComplete={handleAnimationComplete}
+              className="text-base px-5 text-center lg:text-left font-nunito font-light"
+            />
           </div>
         </div>
 
