@@ -7,6 +7,7 @@ import LinkButton from "../ui/Button/LinkButton";
 import { Text } from "../ui/Text";
 import { useRouter } from 'next/navigation';
 import { useThemeStore } from "@/store/ThemeStore";
+import CircularText from "../ui/Animation/Texts/CircularText";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,7 +55,7 @@ export default function Quotation() {
 
     tl.addLabel("start", 0)
       .to(content, { scale: 10, duration: 1, ease: "power3.inOut" }, "start")
-      .to(red, { height: isMobile ? 1000 : 1300, width: isMobile ? 1000 : 1300, duration: 1, ease: "power3.inOut" }, "start+=0.2")
+      .to(red, { height: isMobile ? 1000 : 1800, width: isMobile ? 1000 : 1800, duration: 1, ease: "power3.inOut" }, "start+=0.2")
       .to(red, { opacity: 1, duration: 0.1 }, "start+=0.2");
 
     return () => {
@@ -84,11 +85,11 @@ export default function Quotation() {
         <div className="bg-[#AC52F2] size-96 rounded-full blur-[6rem] absolute mt-20 animate-three"></div>
         <div
           ref={redRef}
-          className="w-1 h-1 bg-background rounded-full z-20 opacity-0 relative overflow-hidden flex items-center justify-center"
+          className="w-1 h-1 bg-background rounded-full z-[15] opacity-0 relative overflow-hidden flex items-center justify-center"
         >
           {/* This inner wrapper stays constant */}
-          <div className="absolute inset-0 flex items-center justify-center w-full">
-            <div className="h-screen w-full flex items-center justify-center flex-col px-5 sm:px-8 md:px-10 bg-background">
+          <div className="absolute flex items-center justify-center w-full max-w-[80rem]">
+            <div className="h-screen w-full relative flex items-center justify-center flex-col px-5 sm:px-8 md:px-10 bg-background">
               <div className="text-center">
                 <Text data-aos="fade-up" className="text-xl sm:text-2xl md:text-3xl font-semibold text-text custom-transition">
                   Hi There!
@@ -129,6 +130,12 @@ export default function Quotation() {
                   text={"My work"}
                 />
               </div>
+              <div className='absolute bottom-0 flex items-center justify-center mb-16 sm:mb-5 font-nunito text-sm tracking-widest'>
+                <div className="flex items-center justify-center">
+                  <p>Scroll For More</p>
+                  <ArrowDown width={14} className="-mt-0.5 ml-0.5" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -141,7 +148,7 @@ export default function Quotation() {
           <div>purpose.</div>
         </div>
         <div className="w-full text-text absolute bottom-0 flex items-center justify-center mb-16 sm:mb-5 font-nunito text-sm tracking-widest">
-          <div className="flex items-center justify-center" onClick={() => { scrollDown(); console.log("clicked") }}>
+          <div className="flex items-center justify-center">
             <p>Scroll For More</p>
             <ArrowDown width={14} className="-mt-0.5 ml-0.5" />
           </div>

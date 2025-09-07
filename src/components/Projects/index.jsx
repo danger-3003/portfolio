@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import TextFromBottom from '../ui/Animation/TextFromBottom'
+import TextFromBottom from '../ui/Animation/Texts/TextFromBottom'
 
 function Projects() {
   return (

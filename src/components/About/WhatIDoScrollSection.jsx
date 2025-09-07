@@ -4,7 +4,8 @@ import React, { useRef, useEffect, useState } from "react";
 import { WhatIDoCardInfo } from "@/constants/WhatIDo";
 import { useThemeStore } from "@/store/ThemeStore";
 import { Heading, Text } from "../ui/Text";
-import BlurText from "../ui/Animation/BlurText";
+import BlurText from "../ui/Animation/Texts/BlurText";
+import CircularText from "../ui/Animation/Texts/CircularText";
 
 // Helper for SVG dash positions
 function getDashCoords(center, radius, angleDeg, dashLength) {
@@ -82,7 +83,7 @@ function WhatIDoScrollSection() {
     >
       <div className="w-full sticky top-0 h-screen z-[5] flex items-center justify-center pointer-events-none">
         {/* Center Content */}
-        <div className="sticky top-0 z-20 grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-10 text-white">
+        <div className="sticky top-0 z-20 grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-10 text-white isolate">
           {/* Left Title */}
           <div className="flex items-center justify-center flex-col text-center md:text-left">
             <Heading className="text-3xl md:text-4xl lg:text-5xl">

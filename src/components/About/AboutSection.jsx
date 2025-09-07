@@ -2,7 +2,8 @@
 
 import React, { useEffect } from 'react'
 import { Heading, Text } from '../ui/Text'
-import RevealText from '../ui/Animation/RevealText'
+import CircularText from '../ui/Animation/Texts/CircularText'
+import RevealText from '../ui/Animation/Texts/RevealText'
 import { useThemeStore } from '@/store/ThemeStore'
 
 function AboutSection() {
@@ -12,8 +13,8 @@ function AboutSection() {
 
   return (
     <>
-      <div className='w-full overflow-hidden flex items-center justify-center flex-col pb-10 pt-16 md:py-20 px-5 sm:px-8 md:px-10'>
-        <div className='max-w-[80rem] w-full '>
+      <div className='w-full relative flex items-center justify-center flex-col pb-10 pt-16 md:py-20 px-5 sm:px-8 md:px-10'>
+        <div className='max-w-[80rem] w-full overflow-hidden'>
           <div className='w-full flex items-center justify-center flex-col-reverse md:flex-row gap-10 lg:gap-32'>
             <div className='sm:basis-[60%] lg:basis-2/3 flex items-start justify-start flex-col gap-7 lg:gap-10'>
               <Heading data-aos="fade-right" className="text-3xl md:text-4xl lg:text-5xl">Who I Am?</Heading>
@@ -44,6 +45,14 @@ function AboutSection() {
               <Text data-aos="fade-right" data-aos-delay="300">- Hima Varsha</Text>
             </div>
           </div>
+        </div>
+        <div className='absolute right-5 sm:right-10 -bottom-[4rem] z-[15] mix-blend-difference rounded-full overflow-hidden'>
+          <CircularText
+            text="SCROLL DOWN * KNOW MORE * "
+            onHover="speedUp"
+            spinDuration={20}
+            className="text-sm sm:text-base font-nunito font-light size-[8rem] text-white"
+          />
         </div>
       </div>
     </>

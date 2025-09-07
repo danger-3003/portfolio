@@ -8,7 +8,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Figma, Sun, Moon } from 'lucide-react';
-import TextScrambler from '../ui/Animation/TextScrambler';
+import TextScrambler from '../ui/Animation/Texts/TextScrambler';
 import { useThemeStore } from '@/store/ThemeStore';
 import ClickOutside from '../ui/ClickOutside';
 
@@ -33,7 +33,7 @@ function Navbar({ scrollProgress }) {
   return (
     <>
       <ClickOutside onClickOutside={handleCloseMenu}>
-        <div className='fixed top-0 z-10 flex items-center justify-center flex-col w-full bg-gradient-to-l from-white/50 dark:from-[#191919]/30 dark:to-[#191919]/30 to-white/50 backdrop-blur-xl shadow-customShadow duration-500 transition-colors'>
+        <div className='fixed top-0 z-20 flex items-center justify-center flex-col w-full bg-gradient-to-l from-white/50 dark:from-[#191919]/30 dark:to-[#191919]/30 to-white/50 backdrop-blur-xl shadow-customShadow duration-500 transition-colors'>
           <nav className='h-16 max-w-[80rem] w-full px-5 relative flex items-center justify-center flex-row'>
             <p className='font-sheppard text-3xl bg-gradient-to-r from-primary-400 to-blue-500 text-transparent bg-clip-text absolute left-5 sm:left-8 pr-2'>
               <TextScrambler text={"Hima Varsha"} />
@@ -91,7 +91,7 @@ function Navbar({ scrollProgress }) {
             <div className={`h-[1px] bg-primary-400 duraiton-500`} style={{ width: `${scrollProgress}%` }}></div>
           </div>
         </div >
-        <div className={`flex md:hidden fixed z-[9] h-44 left-0 items-center ${openMenu ? "top-16" : "-top-72"} w-full justify-center flex-col gap-4 text-primary-400 bg-gradient-to-l from-background/80 to-background/80 dark:from-black/30 dark:to-black/30 backdrop-blur-lg shadow-customShadow custom-transition`}>
+        <div className={`flex md:hidden fixed z-[19] h-44 left-0 items-center ${openMenu ? "top-16" : "-top-72"} w-full justify-center flex-col gap-4 text-primary-400 bg-gradient-to-l from-white/50 dark:from-[#191919]/30 dark:to-[#191919]/30 to-white/50 backdrop-blur-lg shadow-customShadow custom-transition`}>
           {
             navbarURL.map((item, key) => (
               <div key={key} className='group'>
@@ -102,7 +102,7 @@ function Navbar({ scrollProgress }) {
             ))
           }
         </div >
-        <div className='w-full h-12 z-10 fixed bottom-3 px-5 flex items-center justify-center flex-row'>
+        <div className='w-full h-12 z-20 fixed bottom-3 px-5 flex items-center justify-center flex-row'>
           <div className='flex sm:hidden items-center justify-evenly gap-2 w-full max-w-60 border-text border bg-gradient-to-l from-white/50 dark:from-[#191919]/30 dark:to-[#191919]/30 to-white/50 backdrop-blur-lg shadow-customShadow h-full rounded-xl'>
             <IconButton
               className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition"
