@@ -1,11 +1,12 @@
 'use client';
 
 import { useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { useScrollOrNavigate } from "@/components/utils/handleScroll";
 
 export function useNavbarUrls() {
-  const router = useRouter();
   const pathname = usePathname();
+  const scrollOrNavigate = useScrollOrNavigate();
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -32,21 +33,7 @@ export function useNavbarUrls() {
     }
   }, [pathname]);
 
-  const scrollOrNavigate = (id) => {
-    if (typeof window === "undefined") return;
 
-    if (pathname === "/") {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      } else {
-        console.warn(`Element with id '${id}' not found on home page.`);
-      }
-    } else {
-      sessionStorage.setItem("scrollToId", id);
-      router.push("/");
-    }
-  };
 
   const urls = [
     {

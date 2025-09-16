@@ -1,13 +1,14 @@
 import React from 'react'
-import MaskText from '@/components/ui/MaskText';
 import Home from '@/pages/Home';
 import About from '@/components/About';
+import Projects from '@/components/FeatureProjects';
 
 function page() {
   return (
     <>
       <Home />
       <About />
+      <Projects />
     </>
   )
 }

@@ -3,7 +3,7 @@
 import React from 'react'
 // import TextFromBottom from '../ui/Animation/Texts/TextFromBottom'
 
-function Projects() {
+function ProjectsPage() {
   return (
     <>
       <div className='bg-yellow-400 h-screen'>Projects</div>
@@ -15,4 +15,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default ProjectsPage
