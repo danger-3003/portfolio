@@ -1,6 +1,7 @@
-import { Playfair_Display, Nunito, Mrs_Sheppards, Poppins } from "next/font/google";
+import { Playfair_Display, Mrs_Sheppards, Poppins } from "next/font/google";
 import "./globals.css";
 import LenisWrapper from "@/components/ui/Animation/LenisWrapper";
+import { MetaData } from "@/constants/Metadata";
 
 const poppins = Playfair_Display({
   variable: "--font-poppins",
@@ -26,10 +27,7 @@ const sheppards = Mrs_Sheppards({
 //   weight: ['100', '200', '300', '400', '500', '600', '700', '800']
 // })
 
-export const metadata = {
-  title: "Hima Varsha Barla | Portfolio",
-  description: "Hima Varsha Barla | Portfolio",
-};
+export const metadata = MetaData["homepage"];
 
 export default function RootLayout({ children }) {
   return (

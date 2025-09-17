@@ -83,9 +83,9 @@ function WhatIDoScrollSection() {
     >
       <div className="w-full sticky top-0 h-screen z-[5] flex items-center justify-center pointer-events-none">
         {/* Center Content */}
-        <div className="sticky top-0 z-20 grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-10 text-white isolate">
+        <div className="sticky h-screen top-0 z-20 flex items-center justify-center flex-col lg:grid lg:grid-cols-3 gap-6 sm:gap-10 text-white isolate">
           {/* Left Title */}
-          <div className="flex items-center justify-center flex-col text-center md:text-left">
+          <div className="flex items-center justify-end lg:items-center lg:justify-center flex-col text-center md:text-left">
             <Heading className="text-3xl md:text-4xl lg:text-5xl">
               <BlurText
                 activeIndex={activeIndex}
@@ -99,12 +99,12 @@ function WhatIDoScrollSection() {
             </Heading>
           </div>
           {/* Circle with Progress Border and Dashes */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center w-full h-72 md:h-80 lg:h-screen">
             <div className="size-72 md:size-80 xl:size-96 rounded-full flex items-center justify-center relative">
               <Text className="absolute top-5 md:top-6 lg:top-7 text-xl md:text-2xl">
                 What I Do?
               </Text>
-              <Text className="absolute bottom-5 lg:bottom-7 text-base">Scroll</Text>
+              <Text className="absolute bottom-5 lg:bottom-7 text-base">Scroll down</Text>
               {/* SVG Progress + Dashes */}
               <svg
                 width={SIZE}
@@ -178,7 +178,7 @@ function WhatIDoScrollSection() {
                 return (
                   <div
                     key={key}
-                    className="absolute rounded-full overflow-hidden bg-transparent size-40 md:size-48 xl:size-52"
+                    className="absolute rounded-full overflow-hidden bg-transparent size-40 md:size-48 lg:size-52 xl:size-56"
                     style={{
                       clipPath: `circle(${clipCirclePercent}% at 50% 50%)`,
                       top: "50%",
@@ -203,7 +203,7 @@ function WhatIDoScrollSection() {
             </div>
           </div>
           {/* Right Description */}
-          <div className="flex items-center justify-center flex-col text-center lg:text-left max-w-md">
+          <div className="flex items-center justify-start lg:items-center lg:justify-center flex-col text-center lg:text-left max-w-md">
             <BlurText
               activeIndex={activeIndex}
               text={WhatIDoCardInfo[activeIndex].description}

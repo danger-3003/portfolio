@@ -17,6 +17,7 @@ export const ProjectsInfo = [
     type: "design",
     featured: false,
     img: "/assets/projects/menuCard.png",
+    glance: "Interactive coffee menu design enhancing usability, navigation, and experience."
   },
   {
     heading: "Result Insight Hub",
@@ -36,6 +37,7 @@ export const ProjectsInfo = [
     type: "design",
     featured: true,
     img: "/assets/projects/rih.png",
+    glance: "Simplified academic dashboard for visualizing grades, insights, and performance."
   },
   {
     heading: "Email Template",
@@ -55,6 +57,7 @@ export const ProjectsInfo = [
     type: "design",
     featured: false,
     img: "/assets/projects/emailTemplate.svg",
+    glance: "Modern responsive email template improving promotions, branding, and engagement."
   },
   {
     heading: "Libri Hub",
@@ -74,6 +77,7 @@ export const ProjectsInfo = [
     type: "design",
     featured: true,
     img: "/assets/projects/libriHub.png",
+    glance: "Structured digital library interface enhancing accessibility, navigation, and discovery."
   },
   {
     heading: "Coffee App Design",
@@ -93,6 +97,7 @@ export const ProjectsInfo = [
     type: "design",
     featured: false,
     img: "/assets/projects/coffeeApp.png",
+    glance: "Intuitive coffee app login/signup flow ensuring smooth onboarding and usability."
   },
   {
     heading: "Shopify",
@@ -112,6 +117,7 @@ export const ProjectsInfo = [
     type: "design",
     featured: true,
     img: "/assets/projects/shopify.png",
+    glance: "Elegant Shopify e-commerce design improving browsing, conversions, and satisfaction."
   },
   {
     heading: "Friend's Portfolio Design",
@@ -131,6 +137,7 @@ export const ProjectsInfo = [
     type: "design",
     featured: false,
     img: "/assets/projects/sumanthPortfolio.png",
+    glance: "Creative portfolio interface showcasing projects with clarity, visuals, and engagement."
   },
   {
     heading: "My Portfolio",
@@ -150,6 +157,7 @@ export const ProjectsInfo = [
     type: "design",
     featured: false,
     img: "/assets/projects/portfolio.png",
+    glance: "Professional personal portfolio design highlighting creativity, expertise, and storytelling."
   },
   {
     heading: "GenAITools",
@@ -169,5 +177,6 @@ export const ProjectsInfo = [
     type: "design",
     featured: true,
     img: "/assets/projects/genaitools.png",
+    glance: "Modern AI tools platform design improving usability, navigation, and visual identity."
   }
 ]
