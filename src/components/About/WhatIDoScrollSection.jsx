@@ -5,7 +5,7 @@ import { WhatIDoCardInfo } from "@/constants/WhatIDo";
 import { useThemeStore } from "@/store/ThemeStore";
 import { Heading, Text } from "../ui/Text";
 import BlurText from "../ui/Animation/Texts/BlurText";
-import CircularText from "../ui/Animation/Texts/CircularText";
+import { ArrowDown } from "lucide-react";
 
 // Helper for SVG dash positions
 function getDashCoords(center, radius, angleDeg, dashLength) {
@@ -60,7 +60,7 @@ function WhatIDoScrollSection() {
   }, []);
 
   // SVG Progress Border Setup
-  const SIZE = window.innerWidth > 1280 ? 96 * 4 : window.innerWidth > 768 ? 84 * 4 : 76 * 4;
+  const SIZE = typeof window !== 'undefined' && window.innerWidth > 1280 ? 96 * 4 : window.innerWidth > 768 ? 84 * 4 : 76 * 4;
   const STROKE = 1.5; // px stroke width
   const RADIUS = (SIZE - STROKE) / 2;
   const CIRCUM = 2 * Math.PI * RADIUS;
@@ -101,10 +101,12 @@ function WhatIDoScrollSection() {
           {/* Circle with Progress Border and Dashes */}
           <div className="flex items-center justify-center w-full h-72 md:h-80 lg:h-screen">
             <div className="size-72 md:size-80 xl:size-96 rounded-full flex items-center justify-center relative">
-              <Text className="absolute top-5 md:top-6 lg:top-7 text-xl md:text-2xl">
+              <p className="absolute top-5 md:top-6 xl:top-7 text-2xl md:text-3xl font-poppins">
                 What I Do?
-              </Text>
-              <Text className="absolute bottom-5 lg:bottom-7 text-base">Scroll down</Text>
+              </p>
+              <div className="absolute bottom-4 xl:bottom-7 group bg-white size-8 xl:size-10 flex items-center justify-center rounded-full">
+                <ArrowDown className="text-black group-hover:text-primary-300" />
+              </div>
               {/* SVG Progress + Dashes */}
               <svg
                 width={SIZE}

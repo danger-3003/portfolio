@@ -1,3 +1,4 @@
+
 const baseUrl = "https://varsha-new.vercel.app/"; // replace with your actual domain
 
 export const MetaData = {
@@ -7,11 +8,6 @@ export const MetaData = {
       "Explore the creative portfolio of Hima Varsha, a passionate UI/UX Designer who transforms complex ideas into simple, elegant, and user-focused digital experiences.",
     metadataBase: new URL(baseUrl),
     alternates: { canonical: baseUrl },
-    icons: {
-      icon: "/favicon.ico",
-      shortcut: "/favicon.ico",
-      apple: "/apple-touch-icon.png",
-    },
     openGraph: {
       title: "Hima Varsha | UI/UX Designer Portfolio",
       description:
@@ -52,7 +48,18 @@ export const MetaData = {
       "author": "Hima Varsha",
       "creator": "Hima Varsha",
       "robots": "index, follow",
-    }
+    },
+    icons: {
+      icon: [
+        { url: "/assets/icons/faviocn.ico.jpg" }, // default
+        { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+        { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+      ],
+      apple: [
+        { url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" },
+      ],
+      shortcut: ["/assets/icons/faviocn.ico.jpg"],
+    },
   },
 
   "about": {
