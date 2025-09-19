@@ -7,11 +7,6 @@ export const MetaData = {
       "Explore the creative portfolio of Hima Varsha, a passionate UI/UX Designer who transforms complex ideas into simple, elegant, and user-focused digital experiences.",
     metadataBase: new URL(baseUrl),
     alternates: { canonical: baseUrl },
-    icons: {
-      icon: "/favicon.ico",
-      shortcut: "/favicon.ico",
-      apple: "/apple-touch-icon.png",
-    },
     openGraph: {
       title: "Hima Varsha | UI/UX Designer Portfolio",
       description:

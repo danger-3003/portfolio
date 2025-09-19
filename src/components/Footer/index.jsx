@@ -53,7 +53,7 @@ function Footer() {
         </div>
       </div>
       <div className='bg-slate-100 dark:bg-zinc-800/40 h-[6.5rem] sm:h-16 flex items-start sm:items-center justify-center py-3 border-t border-text w-full'>
-        <Text className="text-text">Designed  with ❤️ by <span className='bg-gradient-to-r from-blue-500 to-blue-500 text-transparent bg-clip-text font-bold'>Hima Varsha</span></Text>
+        <Text className="text-text">Designed  with ❤️ by <a href='https://www.linkedin.com/in/hima-varsha-barla' target='_blank' className='bg-gradient-to-r from-blue-500 to-blue-500 text-transparent bg-clip-text font-bold'>Hima Varsha</a></Text>
       </div>
     </>
   )

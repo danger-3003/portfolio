@@ -5,7 +5,7 @@ import { WhatIDoCardInfo } from "@/constants/WhatIDo";
 import { useThemeStore } from "@/store/ThemeStore";
 import { Heading, Text } from "../ui/Text";
 import BlurText from "../ui/Animation/Texts/BlurText";
-import CircularText from "../ui/Animation/Texts/CircularText";
+import { ArrowDown } from "lucide-react";
 
 // Helper for SVG dash positions
 function getDashCoords(center, radius, angleDeg, dashLength) {
@@ -104,7 +104,9 @@ function WhatIDoScrollSection() {
               <Text className="absolute top-5 md:top-6 lg:top-7 text-xl md:text-2xl">
                 What I Do?
               </Text>
-              <Text className="absolute bottom-5 lg:bottom-7 text-base">Scroll down</Text>
+              <div className="absolute bottom-5 lg:bottom-7">
+                <ArrowDown />
+              </div>
               {/* SVG Progress + Dashes */}
               <svg
                 width={SIZE}
