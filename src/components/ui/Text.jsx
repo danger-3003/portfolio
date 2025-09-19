@@ -16,7 +16,7 @@ export const Text = ({ children, onClick, className, ...rest }) => {
 export const Heading = ({ children, className, ...rest }) => {
   return (
     <h2
-      className={`${className} font-poppins`}
+      className={`${className} font-nunito font-semibold`}
       {...rest}
     >
       {children}

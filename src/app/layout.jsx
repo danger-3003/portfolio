@@ -33,8 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning lang="en">
       <head>
-        <link rel="icon" href="/assets/icons/favicon.ico.jpg" />
-        <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.jpg" sizes="180x180" type="image/png"></link>        <script
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
