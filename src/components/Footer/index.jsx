@@ -22,7 +22,7 @@ function Footer() {
               <div className='flex items-center justify-center w-full flex-col gap-5'>
                 <div className='flex items-center sm:items-start justify-between flex-col sm:flex-row w-full gap-5'>
                   <div className='w-full max-w-80 md:max-w-96'>
-                    <Heading className="text-3xl lg:text-4xl text-center sm:text-left">Let’s create something amazing together...</Heading>
+                    <Heading className="text-2xl sm:text-3xl lg:text-4xl text-center sm:text-left">Let’s create something amazing together...</Heading>
                   </div>
                   <div>
                     <p className='font-nunito text-base sm:text-lg font-medium mb-3 hidden sm:block'>Quick links</p>
@@ -63,7 +63,9 @@ function Footer() {
         </div>
         <div className='sticky -z-10 bottom-0 pt-5 pb-20 sm:py-10 flex items-center justify-center bg-slate-200 dark:bg-zinc-800/20 w-full'>
           <div className='max-w-[80rem] w-full flex items-center justify-center'>
-            <p className="text-[14.5vw] leading-none truncate font-poppins text-slate-400 dark:text-zinc-600">Hima Varsha</p>
+            <p className="text-[14.5vw] xl:text-[13rem] leading-none truncate font-poppins text-slate-400 dark:text-zinc-600">
+              Hima Varsha
+            </p>
           </div>
         </div>
       </div>

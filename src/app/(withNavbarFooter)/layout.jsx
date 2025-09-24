@@ -79,16 +79,15 @@ export default function MainLayout({ children }) {
       {/* Custom cursor */}
       <div
         ref={cursorOut}
-        className="border border-primary-400 dark:border-white size-6 rounded-full z-50 fixed flex items-center justify-center pointer-events-none"
+        className="border border-primary-400 dark:border-white size-6 rounded-full z-50 fixed flex items-center justify-center pointer-events-none mix-blend-multiply dark:mix-blend-lighten"
       />
       <div
         ref={cursorIn}
-        className="fixed z-50 bg-primary-400 dark:bg-white size-1.5 rounded-full pointer-events-none"
+        className="fixed z-50 bg-primary-400 dark:bg-white size-1.5 rounded-full pointer-events-none mix-blend-multiply dark:mix-blend-lighten"
       />
 
       {/* Navbar gets scroll progress */}
       <Navbar scrollProgress={scrollProgress} />
-
       <div ref={bodyRef}>
         {children}
       </div>
