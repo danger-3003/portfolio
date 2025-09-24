@@ -1,5 +1,11 @@
 
 const baseUrl = "https://varsha-new.vercel.app/"
+
+export const projectPageInfo = {
+  heading: "Creative UI/UX Case Studies Highlighting Digital Products and Solutions",
+  description: "Explore a selection of Hima Varsha's design work - from intuitive dashboards and e-commerce experiences to AI-powered tools. Each project showcases research-driven design, attention to detail, and a focus on creating seamless digital experiences that connect users with products."
+}
+
 export const ProjectsInfo = [
   {
     heading: "Menu Card",

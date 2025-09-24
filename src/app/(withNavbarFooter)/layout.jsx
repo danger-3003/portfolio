@@ -88,7 +88,7 @@ export default function MainLayout({ children }) {
 
       {/* Navbar gets scroll progress */}
       <Navbar scrollProgress={scrollProgress} />
-      <div ref={bodyRef}>
+      <div ref={bodyRef} className='cursor-default'>
         {children}
       </div>
       <Footer />

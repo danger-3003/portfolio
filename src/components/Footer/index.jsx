@@ -58,7 +58,7 @@ function Footer() {
             </div>
           </div>
           <div className='bg-slate-100 dark:bg-zinc-800 flex items-center justify-center py-4 border-t border-text w-full'>
-            <Text className="text-text">Designed  with ❤️ by <a href='https://www.linkedin.com/in/hima-varsha-barla' target='_blank' className='bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-transparent text-base sm:text-lg bg-clip-text font-semibold mb-0.5'>Hima Varsha</a></Text>
+            <Text className="text-text">Designed  with ❤️ by <a href='https://www.linkedin.com/in/hima-varsha-barla' target='_blank' className='bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-transparent text-base sm:text-lg bg-clip-text font-semibold mb-0.5 pointer-events-auto'>Hima Varsha</a></Text>
           </div>
         </div>
         <div className='sticky -z-10 bottom-0 pt-5 pb-20 sm:py-10 flex items-center justify-center bg-slate-200 dark:bg-zinc-800/20 w-full'>

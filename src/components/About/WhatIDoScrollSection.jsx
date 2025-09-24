@@ -73,7 +73,7 @@ function WhatIDoScrollSection() {
   progressRatio = Math.min(Math.max(progressRatio, 0), 1);
 
   const handleAnimationComplete = () => {
-    console.log('Animation completed!');
+    null
   };
 
   return (
