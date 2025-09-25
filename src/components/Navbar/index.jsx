@@ -99,7 +99,7 @@ function Navbar({ scrollProgress }) {
             navbarURL.map((item, key) => (
               <div key={key} className='group'>
                 <button onClick={() => (item.click(), handleOpenMenu(), console.log("clicked"))} >
-                  <Text className={`cursor-pointer px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400"} custom-transition mix-blend-multiply`}>
+                  <Text className={`cursor-pointer px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400"} custom-transition`}>
                     <TextScrambler text={item.title} duration={1000} />
                   </Text>
                 </button>
