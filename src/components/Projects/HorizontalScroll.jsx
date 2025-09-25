@@ -81,8 +81,8 @@ function HorizontalScroll() {
                 </h1>
               </div>
             </div>
-            <div className="h-screen max-h-max md:max-h-[30rem] lg:max-h-screen w-full col-span-3 px-5 sm:px-8 md:px-10 py-7 flex flex-col justify-between">
-              <div className="py-16 flex flex-col gap-5 sm:gap-7 lg:gap-10">
+            <div className="h-screen max-h-max lg:max-h-screen w-full col-span-3 px-5 sm:px-8 md:px-10 py-7 flex flex-col justify-between">
+              <div className="pt-16 pb-5 lg:py-16 flex flex-col gap-5 lg:gap-10">
                 <Heading className="text-3xl md:text-4xl lg:text-5xl">
                   <BlurText
                     text={projectPageInfo.heading}
@@ -102,16 +102,26 @@ function HorizontalScroll() {
                   className="text-sm sm:text-base font-nunito font-light"
                 />
               </div>
-              <div className="flex justify-center items-center w-full">
-                <div
-                  className="flex lg:hidden items-center"
-                >
-                  <p>Scroll For More</p>
-                  <ArrowDown width={14} className="ml-1 mt-0.5" />
+              <div className="flex justify-center items-center flex-col-reverse lg:flex-row lg:justify-between w-full">
+                <div>
+                  <div
+                    className="flex lg:hidden items-center"
+                  >
+                    <p>Scroll For More</p>
+                    <ArrowDown width={14} className="ml-1 mt-0.5" />
+                  </div>
+                  <div className="items-center hidden lg:flex">
+                    <p>Scroll For More</p>
+                    <ArrowRight width={14} className="ml-1 mt-0.5" />
+                  </div>
                 </div>
-                <div className="items-center hidden lg:flex">
-                  <p>Scroll For More</p>
-                  <ArrowRight width={14} className="ml-1 mt-0.5" />
+                <div className="w-full lg:w-auto mb-12 lg:mb-0">
+                  <div className='flex justify-center sm:justify-end items-start lg:justify-start w-full lg:w-auto'>
+                    <a href={"/"} className='flex items-center justify-center group/button-group gap-2 bg-text text-background cursor-pointer text-[13px] font-nunito rounded-md px-3 pb-[2px] pt-[2.5px]'>
+                      Connect
+                      <ArrowRight width={14} className='group-hover/button-group:rotate-0 -rotate-45 duration-300' />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
