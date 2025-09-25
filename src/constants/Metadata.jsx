@@ -51,7 +51,7 @@ export const MetaData = {
     },
     icons: {
       icon: [
-        { url: "/assets/icons/faviocn.ico.jpg" }, // default
+        { url: "/assets/icons/faviocn.ico.jpg" },
         { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
         { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
       ],

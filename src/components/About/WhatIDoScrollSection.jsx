@@ -73,7 +73,7 @@ function WhatIDoScrollSection() {
   progressRatio = Math.min(Math.max(progressRatio, 0), 1);
 
   const handleAnimationComplete = () => {
-    console.log('Animation completed!');
+    null
   };
 
   return (
@@ -81,9 +81,9 @@ function WhatIDoScrollSection() {
       ref={containerRef}
       className="relative w-full h-[300vh] flex items-start justify-start flex-col"
     >
-      <div className="w-full sticky top-0 h-screen z-[5] flex items-center justify-center pointer-events-none">
+      <div className="w-full sticky top-0 h-dvh z-[5] flex items-center justify-center pointer-events-none">
         {/* Center Content */}
-        <div className="sticky h-screen top-0 z-20 flex items-center justify-center flex-col lg:grid lg:grid-cols-3 gap-6 sm:gap-10 text-white isolate">
+        <div className="sticky h-dvh top-0 z-20 flex items-center justify-center flex-col lg:grid lg:grid-cols-3 gap-6 sm:gap-10 text-white isolate">
           {/* Left Title */}
           <div className="flex items-center justify-end lg:items-center lg:justify-center flex-col text-center md:text-left">
             <Heading className="text-3xl md:text-4xl lg:text-5xl">
@@ -99,9 +99,9 @@ function WhatIDoScrollSection() {
             </Heading>
           </div>
           {/* Circle with Progress Border and Dashes */}
-          <div className="flex items-center justify-center w-full h-72 md:h-80 lg:h-screen">
+          <div className="flex items-center justify-center w-full h-72 md:h-80 lg:h-dvh">
             <div className="size-72 md:size-80 xl:size-96 rounded-full flex items-center justify-center relative">
-              <p className="absolute top-5 md:top-6 xl:top-7 text-2xl md:text-3xl font-poppins">
+              <p className="absolute top-5 md:top-6 xl:top-7 text-2xl md:text-2xl lg:text-3xl font-poppins">
                 What I Do?
               </p>
               <div className="absolute bottom-4 xl:bottom-7 group bg-white size-8 xl:size-10 flex items-center justify-center rounded-full">

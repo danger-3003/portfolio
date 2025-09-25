@@ -5,7 +5,7 @@ export const Text = ({ children, onClick, className, ...rest }) => {
   return (
     <p
       onClick={onClick}
-      className={`text-sm sm:text-base ${className} font-nunito font-light`}
+      className={`text-sm sm:text-base ${className} font-nunito font-light pointer-events-none`}
       {...rest}
     >
       {children}
@@ -16,7 +16,7 @@ export const Text = ({ children, onClick, className, ...rest }) => {
 export const Heading = ({ children, className, ...rest }) => {
   return (
     <h2
-      className={`${className} font-nunito font-semibold`}
+      className={`${className} font-nunito font-semibold pointer-events-none`}
       {...rest}
     >
       {children}

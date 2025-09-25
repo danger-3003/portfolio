@@ -79,17 +79,17 @@ export default function Quotation() {
   return (
     <>
       <div id="homeSection" className="w-full"></div>
-      <section ref={sectionRef} className="h-screen flex items-center justify-center flex-col relative overflow-hidden w-full">
+      <section ref={sectionRef} className="h-dvh flex items-center justify-center flex-col relative overflow-hidden w-full will-change-transform">
         <div className="bg-cyan-400 size-80 rounded-full blur-[6rem] absolute -mt-20 -ml-[25rem] animate-one"></div>
         <div className="bg-[#D11C9F] size-[26rem] rounded-full blur-[6rem] absolute ml-60 -mt-40 animate-two"></div>
         <div className="bg-[#AC52F2] size-96 rounded-full blur-[6rem] absolute mt-20 animate-three"></div>
         <div
           ref={redRef}
-          className="w-1 h-1 bg-background rounded-full z-[15] opacity-0 relative overflow-hidden flex items-center justify-center"
+          className="w-1 h-1 bg-background rounded-full z-[15] opacity-0 relative overflow-hidden flex items-center justify-center will-change-transform"
         >
           {/* This inner wrapper stays constant */}
           <div className="absolute flex items-center justify-center w-full max-w-[80rem]">
-            <div className="h-screen w-full relative flex items-center justify-center flex-col px-5 sm:px-8 md:px-10 bg-background">
+            <div className="h-dvh w-full relative flex items-center justify-center flex-col px-5 sm:px-8 md:px-10 bg-background">
               <div className="text-center">
                 <Text data-aos="fade-up" className="text-xl sm:text-2xl md:text-3xl font-semibold text-text custom-transition">
                   Hi There!

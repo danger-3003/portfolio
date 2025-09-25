@@ -7,33 +7,31 @@ export function useScrollOrNavigate() {
   const router = useRouter();
   const pathname = usePathname();
 
+  // Function to scroll or navigate
   const scrollOrNavigate = (id) => {
     if (typeof window === "undefined") return;
 
     if (pathname === "/") {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      } else {
-        console.warn(`Element with id '${id}' not found on home page.`);
-      }
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     } else {
       sessionStorage.setItem("scrollToId", id);
       router.push("/");
     }
   };
 
-  // handle scroll after navigating to "/"
+  // Handle scroll after navigating to "/"
   useEffect(() => {
-    if (pathname === "/") {
-      const scrollToId = sessionStorage.getItem("scrollToId");
-      if (scrollToId) {
-        sessionStorage.removeItem("scrollToId");
-        const el = document.getElementById(scrollToId);
+    if (typeof window === "undefined") return;
+
+    const targetId = sessionStorage.getItem("scrollToId");
+    if (targetId && pathname === "/") {
+      setTimeout(() => {
+        const el = document.getElementById(targetId);
         if (el) {
           el.scrollIntoView({ behavior: "smooth" });
         }
-      }
+        sessionStorage.removeItem("scrollToId");
+      }, 1200);
     }
   }, [pathname]);
 

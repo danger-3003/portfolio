@@ -2,6 +2,7 @@ import { Playfair_Display, Mrs_Sheppards, Poppins } from "next/font/google";
 import "./globals.css";
 import LenisWrapper from "@/components/ui/Animation/LenisWrapper";
 import { MetaData } from "@/constants/Metadata";
+import ClickSpark from "@/components/ui/ClickSpark";
 
 const poppins = Playfair_Display({
   variable: "--font-poppins",
@@ -53,7 +54,14 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${poppins?.variable} ${nunito?.variable} ${sheppards?.variable} bg-background text-text custom-transition`}>
         <LenisWrapper>
-          {children}
+          <ClickSpark
+            sparkSize={10}
+            sparkRadius={15}
+            sparkCount={8}
+            duration={400}
+          >
+            {children}
+          </ClickSpark>
         </LenisWrapper>
       </body>
     </html>

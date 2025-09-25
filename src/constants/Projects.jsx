@@ -1,8 +1,18 @@
+
+const baseUrl = "https://varsha-new.vercel.app/"
+
+export const projectPageInfo = {
+  heading: "Creative UI/UX Case Studies Highlighting Digital Products and Solutions",
+  description: "Explore a selection of Hima Varsha's design work - from intuitive dashboards and e-commerce experiences to AI-powered tools. Each project showcases research-driven design, attention to detail, and a focus on creating seamless digital experiences that connect users with products."
+}
+
 export const ProjectsInfo = [
   {
     heading: "Menu Card",
-    problemStatement: "Design a visually engaging and user-friendly menu card for a coffee shop app that simplifies navigation and enhances customer interaction.",
-    description: "The Menu Card project focuses on creating an intuitive interface where users can easily browse through coffee options, combos, and add-ons. Designed with Figma, this interactive layout balances modern design with usability, ensuring customers can quickly locate items and complete their orders. By focusing on clarity and simplicity, the design improves the digital dining experience for coffee lovers while maintaining brand aesthetics.",
+    problemStatement:
+      "Design a visually engaging and user-friendly menu card for a coffee shop app that simplifies navigation and enhances customer interaction.",
+    description:
+      "The Menu Card project focuses on creating an intuitive interface where users can easily browse through coffee options, combos, and add-ons. Designed with Figma, this interactive layout balances modern design with usability, ensuring customers can quickly locate items and complete their orders. By focusing on clarity and simplicity, the design improves the digital dining experience for coffee lovers while maintaining brand aesthetics.",
     process: [
       "Conducted research on user behavior to identify how customers typically navigate digital menu cards within food and beverage apps.",
       "Outlined the key categories and product hierarchies to create a structured design flow for easy access and reduced cognitive load.",
@@ -11,18 +21,51 @@ export const ProjectsInfo = [
       "Tested the prototype with a small group of users to gather feedback on navigation speed and clarity of visual elements.",
       "Refined the design by addressing user pain points such as overly dense sections and unclear icons.",
       "Finalized the layout with an emphasis on readability, visual hierarchy, and delightful user experience.",
-      "Delivered the interactive design ready for developer handoff with well-organized Figma components."
+      "Delivered the interactive design ready for developer handoff with well-organized Figma components.",
     ],
-    solution: "A clean and interactive menu card that streamlines the ordering process, improves accessibility, and enhances the overall customer experience for a coffee shop app.",
+    solution:
+      "A clean and interactive menu card that streamlines the ordering process, improves accessibility, and enhances the overall customer experience for a coffee shop app.",
     type: "design",
     featured: false,
     img: "/assets/projects/menuCard.png",
-    glance: "Interactive coffee menu design enhancing usability, navigation, and experience."
+    glance:
+      "Interactive coffee menu design enhancing usability, navigation, and experience.",
+    meta: {
+      title: "Menu Card | Interactive Coffee Shop Menu Design",
+      description:
+        "Explore the Menu Card project — a clean and interactive design for a coffee shop app. Enhancing usability, navigation, and digital dining experience.",
+      metadataBase: new URL(baseUrl),
+      alternates: {
+        canonical: `${baseUrl}/projects/menu-card`,
+      },
+      openGraph: {
+        title: "Menu Card | Interactive Coffee Shop Menu Design",
+        description:
+          "Discover a user-friendly coffee menu card design that improves navigation, ordering, and customer experience in digital food apps.",
+        url: `${baseUrl}/projects/menu-card`,
+        type: "website",
+        siteName: "Rever",
+        images: [
+          {
+            url: "/assets/projects/menuCard.png",
+            width: 1200,
+            height: 630,
+            alt: "Menu Card Project",
+          },
+        ],
+        locale: "en_US",
+      },
+      other: {
+        site_name: "Rever",
+      },
+    },
   },
   {
     heading: "Result Insight Hub",
-    problemStatement: "Develop an interface that allows students and educators to clearly visualize and analyze performance data in an intuitive manner.",
-    description: "The Result Insight Hub project is built around the idea of simplifying academic data presentation through clean and interactive design. Using Figma, the interface provides educators and students with a structured layout that highlights grades, trends, and performance insights. The design ensures easy interpretation of data while maintaining visual appeal, allowing users to track progress and make informed decisions efficiently.",
+    problemStatement:
+      "Develop an interface that allows students and educators to clearly visualize and analyze performance data in an intuitive manner.",
+    description:
+      "The Result Insight Hub project is built around the idea of simplifying academic data presentation through clean and interactive design. Using Figma, the interface provides educators and students with a structured layout that highlights grades, trends, and performance insights. The design ensures easy interpretation of data while maintaining visual appeal, allowing users to track progress and make informed decisions efficiently.",
     process: [
       "Analyzed existing academic dashboards to understand the most effective ways of presenting student performance data.",
       "Identified the pain points in traditional systems, such as cluttered charts and confusing layouts.",
@@ -31,18 +74,51 @@ export const ProjectsInfo = [
       "Developed polished Figma mockups that incorporated color-coded charts, performance indicators, and easy-to-read labels.",
       "Conducted usability testing to evaluate how well users could interpret the displayed data without external guidance.",
       "Iterated based on feedback to enhance clarity and reduce cognitive load for both primary and secondary data views.",
-      "Finalized the design with accessible typography, strong contrasts, and modular components for scalability."
+      "Finalized the design with accessible typography, strong contrasts, and modular components for scalability.",
     ],
-    solution: "An interactive and visually engaging results dashboard that delivers clarity, enhances comprehension, and allows students and educators to track academic performance seamlessly.",
+    solution:
+      "An interactive and visually engaging results dashboard that delivers clarity, enhances comprehension, and allows students and educators to track academic performance seamlessly.",
     type: "design",
     featured: true,
     img: "/assets/projects/rih.png",
-    glance: "Simplified academic dashboard for visualizing grades, insights, and performance."
+    glance:
+      "Simplified academic dashboard for visualizing grades, insights, and performance.",
+    meta: {
+      title: "Result Insight Hub | Academic Dashboard Design",
+      description:
+        "Discover the Result Insight Hub — a clean and interactive academic dashboard design that simplifies grade visualization and performance insights.",
+      metadataBase: new URL(baseUrl),
+      alternates: {
+        canonical: `${baseUrl}/projects/result-insight-hub`,
+      },
+      openGraph: {
+        title: "Result Insight Hub | Academic Dashboard Design",
+        description:
+          "Explore an intuitive results dashboard for students and educators. Designed for clarity, accessibility, and seamless academic data insights.",
+        url: `${baseUrl}/projects/result-insight-hub`,
+        type: "website",
+        siteName: "Rever",
+        images: [
+          {
+            url: "/assets/projects/rih.png",
+            width: 1200,
+            height: 630,
+            alt: "Result Insight Hub Project",
+          },
+        ],
+        locale: "en_US",
+      },
+      other: {
+        site_name: "Rever",
+      },
+    },
   },
   {
     heading: "Email Template",
-    problemStatement: "Design a clean and visually appealing email template for a coffee shop app to improve customer engagement and brand communication.",
-    description: "The Email Template project delivers a sleek and modern design tailored for digital communication in a coffee shop app. Built in Figma, the layout emphasizes readability, mobile responsiveness, and brand consistency. With a balanced structure of visuals and text, the design ensures effective communication of promotions, updates, and personalized offers, making it a powerful tool for customer retention and marketing.",
+    problemStatement:
+      "Design a clean and visually appealing email template for a coffee shop app to improve customer engagement and brand communication.",
+    description:
+      "The Email Template project delivers a sleek and modern design tailored for digital communication in a coffee shop app. Built in Figma, the layout emphasizes readability, mobile responsiveness, and brand consistency. With a balanced structure of visuals and text, the design ensures effective communication of promotions, updates, and personalized offers, making it a powerful tool for customer retention and marketing.",
     process: [
       "Researched best practices for email marketing design to understand what increases open rates and customer engagement.",
       "Outlined the content structure focusing on headers, promotional banners, and call-to-action buttons.",
@@ -51,18 +127,51 @@ export const ProjectsInfo = [
       "Ensured accessibility by selecting color contrasts and font sizes that work for all types of users.",
       "Tested the prototype across multiple email clients to confirm layout compatibility.",
       "Incorporated feedback from stakeholders to refine the balance between text and imagery.",
-      "Delivered a final email template optimized for readability, usability, and brand appeal."
+      "Delivered a final email template optimized for readability, usability, and brand appeal.",
     ],
-    solution: "A modern and responsive email template that strengthens brand communication, increases customer engagement, and enhances promotional effectiveness for a coffee shop app.",
+    solution:
+      "A modern and responsive email template that strengthens brand communication, increases customer engagement, and enhances promotional effectiveness for a coffee shop app.",
     type: "design",
     featured: false,
     img: "/assets/projects/emailTemplate.svg",
-    glance: "Modern responsive email template improving promotions, branding, and engagement."
+    glance:
+      "Modern responsive email template improving promotions, branding, and engagement.",
+    meta: {
+      title: "Email Template | Coffee Shop Marketing Design",
+      description:
+        "Discover a sleek and modern email template design for a coffee shop app. Boost engagement, brand communication, and customer retention.",
+      metadataBase: new URL(baseUrl),
+      alternates: {
+        canonical: `${baseUrl}/projects/email-template`,
+      },
+      openGraph: {
+        title: "Email Template | Coffee Shop Marketing Design",
+        description:
+          "A responsive and engaging email template designed for coffee shop apps. Enhances communication and customer experience.",
+        url: `${baseUrl}/projects/email-template`,
+        type: "website",
+        siteName: "Rever",
+        images: [
+          {
+            url: "/assets/projects/emailTemplate.svg",
+            width: 1200,
+            height: 630,
+            alt: "Email Template Project",
+          },
+        ],
+        locale: "en_US",
+      },
+      other: {
+        site_name: "Rever",
+      },
+    },
   },
   {
     heading: "Libri Hub",
-    problemStatement: "Design a simple, intuitive, and systematic interface for a library management platform to improve user accessibility and resource discovery.",
-    description: "The Libri Hub project reimagines the digital library experience by creating a clean, structured, and user-friendly interface. Developed in Figma, the design emphasizes seamless navigation and resource categorization, allowing users to quickly browse, borrow, and manage digital content. By focusing on simplicity and functionality, the design enhances the overall user journey, making digital libraries more accessible and engaging.",
+    problemStatement:
+      "Design a simple, intuitive, and systematic interface for a library management platform to improve user accessibility and resource discovery.",
+    description:
+      "The Libri Hub project reimagines the digital library experience by creating a clean, structured, and user-friendly interface. Developed in Figma, the design emphasizes seamless navigation and resource categorization, allowing users to quickly browse, borrow, and manage digital content. By focusing on simplicity and functionality, the design enhances the overall user journey, making digital libraries more accessible and engaging.",
     process: [
       "Studied user expectations and challenges in navigating digital library platforms.",
       "Outlined the essential features required for quick search, borrowing, and content management.",
@@ -71,18 +180,51 @@ export const ProjectsInfo = [
       "Ensured intuitive navigation by organizing resources into well-defined categories.",
       "Conducted user feedback sessions to validate ease of navigation and identify areas for improvement.",
       "Refined the interface to address navigation gaps and enhance visual balance.",
-      "Delivered the final structured design optimized for accessibility and scalability."
+      "Delivered the final structured design optimized for accessibility and scalability.",
     ],
-    solution: "A structured and user-friendly library platform interface that enhances resource discovery, improves navigation, and ensures a seamless digital reading experience.",
+    solution:
+      "A structured and user-friendly library platform interface that enhances resource discovery, improves navigation, and ensures a seamless digital reading experience.",
     type: "design",
     featured: true,
     img: "/assets/projects/libriHub.png",
-    glance: "Structured digital library interface enhancing accessibility, navigation, and discovery."
+    glance:
+      "Structured digital library interface enhancing accessibility, navigation, and discovery.",
+    meta: {
+      title: "Libri Hub | Digital Library Interface Design",
+      description:
+        "Explore Libri Hub — a structured and user-friendly library management platform design. Enhancing accessibility, navigation, and discovery.",
+      metadataBase: new URL(baseUrl),
+      alternates: {
+        canonical: `${baseUrl}/projects/libri-hub`,
+      },
+      openGraph: {
+        title: "Libri Hub | Digital Library Interface Design",
+        description:
+          "A modern and simple library platform design that improves navigation, discovery, and user accessibility in digital libraries.",
+        url: `${baseUrl}/projects/libri-hub`,
+        type: "website",
+        siteName: "Rever",
+        images: [
+          {
+            url: "/assets/projects/libriHub.png",
+            width: 1200,
+            height: 630,
+            alt: "Libri Hub Project",
+          },
+        ],
+        locale: "en_US",
+      },
+      other: {
+        site_name: "Rever",
+      },
+    },
   },
   {
     heading: "Coffee App Design",
-    problemStatement: "Create an intuitive design for a coffee app’s login and signup screens to provide customers with a smooth onboarding experience.",
-    description: "The Coffee App Design project is centered around enhancing customer onboarding through simple and engaging login and signup pages. Designed in Figma, the screens balance functionality with aesthetics, ensuring that users can quickly register, log in, and start ordering. The design uses familiar interaction patterns, clean layouts, and brand consistency to deliver a seamless experience that builds customer trust and loyalty.",
+    problemStatement:
+      "Create an intuitive design for a coffee app’s login and signup screens to provide customers with a smooth onboarding experience.",
+    description:
+      "The Coffee App Design project is centered around enhancing customer onboarding through simple and engaging login and signup pages. Designed in Figma, the screens balance functionality with aesthetics, ensuring that users can quickly register, log in, and start ordering. The design uses familiar interaction patterns, clean layouts, and brand consistency to deliver a seamless experience that builds customer trust and loyalty.",
     process: [
       "Researched mobile app onboarding trends to identify features that maximize user retention.",
       "Outlined essential fields and simplified form structures for quicker registrations.",
@@ -91,18 +233,51 @@ export const ProjectsInfo = [
       "Incorporated error states, hints, and validation feedback to guide users effectively.",
       "Tested the flow with sample users to evaluate ease of navigation and form completion rates.",
       "Refined spacing, typography, and visuals to create a welcoming and professional look.",
-      "Prepared final designs ready for handoff with scalable components and design tokens."
+      "Prepared final designs ready for handoff with scalable components and design tokens.",
     ],
-    solution: "Clean and user-friendly login and signup screens that simplify customer onboarding, reduce friction, and create a seamless experience for a coffee app.",
+    solution:
+      "Clean and user-friendly login and signup screens that simplify customer onboarding, reduce friction, and create a seamless experience for a coffee app.",
     type: "design",
     featured: false,
     img: "/assets/projects/coffeeApp.png",
-    glance: "Intuitive coffee app login/signup flow ensuring smooth onboarding and usability."
+    glance:
+      "Intuitive coffee app login/signup flow ensuring smooth onboarding and usability.",
+    meta: {
+      title: "Coffee App Design | Onboarding Screens",
+      description:
+        "Discover Coffee App Design — intuitive login and signup screens that simplify onboarding, improve usability, and ensure a smooth experience.",
+      metadataBase: new URL(baseUrl),
+      alternates: {
+        canonical: `${baseUrl}/projects/coffee-app-design`,
+      },
+      openGraph: {
+        title: "Coffee App Design | Onboarding Screens",
+        description:
+          "A clean and user-friendly login/signup flow for a coffee app. Designed to reduce friction and enhance onboarding.",
+        url: `${baseUrl}/projects/coffee-app-design`,
+        type: "website",
+        siteName: "Rever",
+        images: [
+          {
+            url: "/assets/projects/coffeeApp.png",
+            width: 1200,
+            height: 630,
+            alt: "Coffee App Design Project",
+          },
+        ],
+        locale: "en_US",
+      },
+      other: {
+        site_name: "Rever",
+      },
+    },
   },
   {
     heading: "Shopify",
-    problemStatement: "Design an elegant and user-focused Shopify e-commerce website with visually appealing layouts and seamless product browsing.",
-    description: "The Shopify project delivers a visually attractive and conversion-oriented e-commerce website design. Created in Figma, the layout emphasizes product presentation, intuitive navigation, and responsive design. High-quality imagery, clean typography, and strategically placed calls-to-action ensure an engaging user journey. The design enhances customer experience and empowers businesses to showcase products in a professional and compelling way.",
+    problemStatement:
+      "Design an elegant and user-focused Shopify e-commerce website with visually appealing layouts and seamless product browsing.",
+    description:
+      "The Shopify project delivers a visually attractive and conversion-oriented e-commerce website design. Created in Figma, the layout emphasizes product presentation, intuitive navigation, and responsive design. High-quality imagery, clean typography, and strategically placed calls-to-action ensure an engaging user journey. The design enhances customer experience and empowers businesses to showcase products in a professional and compelling way.",
     process: [
       "Researched e-commerce design trends and customer behavior to understand what drives conversions.",
       "Outlined the essential shopping journey from homepage browsing to checkout completion.",
@@ -111,18 +286,51 @@ export const ProjectsInfo = [
       "Tested design prototypes to evaluate user interactions and ease of purchase flow.",
       "Refined layouts to reduce distractions and highlight primary call-to-action elements.",
       "Ensured responsiveness by testing across desktop, tablet, and mobile screen sizes.",
-      "Finalized polished Shopify templates optimized for usability and visual appeal."
+      "Finalized polished Shopify templates optimized for usability and visual appeal.",
     ],
-    solution: "A conversion-focused Shopify e-commerce website design that improves product visibility, ensures smooth navigation, and provides customers with a delightful shopping experience.",
+    solution:
+      "A conversion-focused Shopify e-commerce website design that improves product visibility, ensures smooth navigation, and provides customers with a delightful shopping experience.",
     type: "design",
     featured: true,
     img: "/assets/projects/shopify.png",
-    glance: "Elegant Shopify e-commerce design improving browsing, conversions, and satisfaction."
+    glance:
+      "Elegant Shopify e-commerce design improving browsing, conversions, and satisfaction.",
+    meta: {
+      title: "Shopify | E-commerce Website Design",
+      description:
+        "Explore the Shopify project — an elegant and user-focused e-commerce design. Enhances product browsing, conversions, and user satisfaction.",
+      metadataBase: new URL(baseUrl),
+      alternates: {
+        canonical: `${baseUrl}/projects/shopify`,
+      },
+      openGraph: {
+        title: "Shopify | E-commerce Website Design",
+        description:
+          "A modern Shopify e-commerce design that improves shopping journeys, usability, and customer experience.",
+        url: `${baseUrl}/projects/shopify`,
+        type: "website",
+        siteName: "Rever",
+        images: [
+          {
+            url: "/assets/projects/shopify.png",
+            width: 1200,
+            height: 630,
+            alt: "Shopify Project",
+          },
+        ],
+        locale: "en_US",
+      },
+      other: {
+        site_name: "Rever",
+      },
+    },
   },
   {
     heading: "Friend's Portfolio Design",
-    problemStatement: "Design a creative and interactive portfolio that showcases a professional’s projects with clarity and vibrant visuals.",
-    description: "The Friend’s Portfolio Design project focuses on building a visually engaging platform to highlight creative work effectively. Crafted in Figma, the design emphasizes modern layouts, bold visuals, and clear navigation to help showcase projects in an attractive manner. By balancing aesthetics and usability, the portfolio offers a strong digital presence, enabling professionals to present their skills and achievements with confidence.",
+    problemStatement:
+      "Design a creative and interactive portfolio that showcases a professional’s projects with clarity and vibrant visuals.",
+    description:
+      "The Friend’s Portfolio Design project focuses on building a visually engaging platform to highlight creative work effectively. Crafted in Figma, the design emphasizes modern layouts, bold visuals, and clear navigation to help showcase projects in an attractive manner. By balancing aesthetics and usability, the portfolio offers a strong digital presence, enabling professionals to present their skills and achievements with confidence.",
     process: [
       "Researched modern portfolio design trends to identify features that stand out visually and functionally.",
       "Outlined content hierarchy to prioritize featured projects, skills, and contact information.",
@@ -131,52 +339,143 @@ export const ProjectsInfo = [
       "Conducted usability reviews to ensure that projects are easy to browse and navigate.",
       "Refined visuals, typography, and colors to align with a modern professional identity.",
       "Added interactive features like hover effects and transitions for enhanced engagement.",
-      "Delivered the final design ensuring adaptability across devices and browsers."
+      "Delivered the final design ensuring adaptability across devices and browsers.",
     ],
-    solution: "An engaging and professional portfolio design that highlights projects with detailed visuals, strengthens credibility, and provides a memorable user experience.",
+    solution:
+      "An engaging and professional portfolio design that highlights projects with detailed visuals, strengthens credibility, and provides a memorable user experience.",
     type: "design",
     featured: false,
     img: "/assets/projects/sumanthPortfolio.png",
-    glance: "Creative portfolio interface showcasing projects with clarity, visuals, and engagement."
+    glance:
+      "Creative portfolio interface showcasing projects with clarity, visuals, and engagement.",
+    meta: {
+      title: "Friend's Portfolio Design | Creative Showcase",
+      description:
+        "Discover Friend’s Portfolio Design — a creative and interactive portfolio that highlights projects with clarity, visuals, and storytelling.",
+      metadataBase: new URL(baseUrl),
+      alternates: {
+        canonical: `${baseUrl}/projects/friends-portfolio-design`,
+      },
+      openGraph: {
+        title: "Friend's Portfolio Design | Creative Showcase",
+        description:
+          "An engaging portfolio design with modern layouts, visuals, and interactive elements. Perfect for showcasing professional projects.",
+        url: `${baseUrl}/projects/friends-portfolio-design`,
+        type: "website",
+        siteName: "Rever",
+        images: [
+          {
+            url: "/assets/projects/sumanthPortfolio.png",
+            width: 1200,
+            height: 630,
+            alt: "Friend's Portfolio Project",
+          },
+        ],
+        locale: "en_US",
+      },
+      other: {
+        site_name: "Rever",
+      },
+    },
   },
   {
     heading: "My Portfolio",
-    problemStatement: "Design a personal portfolio to professionally showcase design expertise, creative projects, and user-centered solutions.",
-    description: "The My Portfolio project is designed to serve as a comprehensive platform for presenting personal work and design journey. Built with Figma, the layout emphasizes clean structures, detailed project sections, and intuitive navigation. By combining storytelling with modern design elements, the portfolio enhances visibility, builds credibility, and provides an engaging experience for visitors exploring design capabilities.",
+    problemStatement:
+      "Create a personal portfolio website to showcase skills, projects, and experience in a clean, professional way.",
+    description:
+      "Designed and developed a responsive personal portfolio that highlights work experience, design case studies, and development projects. Optimized for performance, SEO, and accessibility.",
     process: [
-      "Studied competitor portfolios to understand best practices and unique presentation styles.",
-      "Outlined content flow to ensure seamless storytelling from introduction to detailed projects.",
-      "Created wireframes to organize project showcases, testimonials, and contact sections.",
-      "Designed polished Figma layouts emphasizing consistency, minimalism, and clarity.",
-      "Integrated storytelling elements to provide context and insights for each project.",
-      "Tested the design with peers to ensure readability and ease of navigation.",
-      "Refined the portfolio to balance aesthetics and functionality for maximum engagement.",
-      "Prepared final design with reusable components for future scalability and updates."
+      "Defined content structure (about, projects, contact).",
+      "Wireframed and prototyped layout in Figma.",
+      "Developed in Next.js with Tailwind CSS for styling.",
+      "Added smooth animations and responsive design.",
+      "Integrated SEO best practices and OpenGraph support.",
     ],
-    solution: "A professional and user-friendly portfolio design that highlights creative expertise, showcases projects effectively, and creates a strong online presence.",
-    type: "design",
+    solution:
+      "A sleek, professional portfolio website serving as a personal brand hub with a modern UI/UX.",
+    type: "development",
     featured: false,
     img: "/assets/projects/portfolio.png",
-    glance: "Professional personal portfolio design highlighting creativity, expertise, and storytelling."
+    glance:
+      "A sleek, responsive personal portfolio showcasing skills, projects, and experience.",
+    meta: {
+      title: "My Portfolio | Personal Developer Portfolio Website",
+      description:
+        "Explore my personal portfolio website — designed and developed with Next.js and Tailwind CSS. Showcasing projects, design case studies, and professional skills.",
+      metadataBase: new URL(baseUrl),
+      alternates: {
+        canonical: `${baseUrl}/projects/my-portfolio`,
+      },
+      openGraph: {
+        title: "My Portfolio | Personal Developer Portfolio Website",
+        description:
+          "A professional, responsive portfolio built with Next.js and Tailwind CSS. Showcasing projects, experience, and design case studies.",
+        url: `${baseUrl}/projects/my-portfolio`,
+        type: "website",
+        siteName: "Rever",
+        images: [
+          {
+            url: "/assets/projects/portfolio.png",
+            width: 1200,
+            height: 630,
+            alt: "My Portfolio Website",
+          },
+        ],
+        locale: "en_US",
+      },
+      other: {
+        site_name: "Rever",
+      },
+    },
   },
   {
     heading: "GenAITools",
-    problemStatement: "Design a visually striking and modern interface for an AI tools platform to enhance usability and create a cohesive experience.",
-    description: "The GenAITools project leverages color psychology, typography, and modern UI principles to deliver an innovative design. Created in Figma, the interface emphasizes functionality with a polished visual identity, ensuring that users can navigate features effortlessly. The design combines strong aesthetics with clarity, offering a seamless experience that reflects the sophistication of AI-powered platforms.",
+    problemStatement:
+      "Build an AI-powered platform showcasing various generative AI tools with interactive demos.",
+    description:
+      "Developed a responsive web application that lists AI-powered tools with categories, filters, and demos. Focused on usability, performance, and clean design.",
     process: [
-      "Researched AI platform interfaces to identify common usability challenges and opportunities.",
-      "Outlined essential features to showcase tools and functionalities in an organized structure.",
-      "Created low-fidelity wireframes to validate navigation and layout flows.",
-      "Designed high-fidelity mockups in Figma with strong typography, balanced colors, and intuitive layouts.",
-      "Conducted usability testing with potential users to refine navigation and hierarchy.",
-      "Enhanced visual hierarchy with deliberate use of color contrast and spacing.",
-      "Addressed accessibility considerations for inclusivity across a wide range of users.",
-      "Finalized the design as a scalable and visually cohesive interface for AI-powered tools."
+      "Researched popular AI tools and structured database schema.",
+      "Designed UI for search, filter, and tool showcase in Figma.",
+      "Developed in Next.js with Tailwind CSS and Framer Motion for animations.",
+      "Integrated API routes for tool data and interactive demos.",
+      "Deployed with SEO optimization and OpenGraph meta.",
     ],
-    solution: "A polished and intuitive AI tools platform design that combines usability with strong visual identity, ensuring a seamless and professional user experience.",
-    type: "design",
+    solution:
+      "An engaging AI tools hub with a modern UI and smooth UX, allowing users to explore and interact with generative AI applications.",
+    type: "development",
     featured: true,
     img: "/assets/projects/genaitools.png",
-    glance: "Modern AI tools platform design improving usability, navigation, and visual identity."
+    glance:
+      "A modern AI tools platform showcasing generative AI apps with interactivity and clean UI.",
+    meta: {
+      title: "GenAITools | Explore Generative AI Tools with Interactive Demos",
+      description:
+        "Discover GenAITools — a platform to explore, filter, and interact with generative AI applications. Built with Next.js, Tailwind CSS, and Framer Motion.",
+      metadataBase: new URL(baseUrl),
+      alternates: {
+        canonical: `${baseUrl}/projects/genaitools`,
+      },
+      openGraph: {
+        title: "GenAITools | Explore Generative AI Tools with Interactive Demos",
+        description:
+          "A modern hub for exploring generative AI tools with categories, filters, and live demos. Built with Next.js and Tailwind CSS.",
+        url: `${baseUrl}/projects/genaitools`,
+        type: "website",
+        siteName: "Rever",
+        images: [
+          {
+            url: "/assets/projects/genaitools.png",
+            width: 1200,
+            height: 630,
+            alt: "GenAITools Project",
+          },
+        ],
+        locale: "en_US",
+      },
+      other: {
+        site_name: "Rever",
+      },
+    },
   }
 ]

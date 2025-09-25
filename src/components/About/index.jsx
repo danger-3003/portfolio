@@ -12,7 +12,6 @@ function About() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div
-        id="aboutSection"
         className="max-w-[80rem] w-full flex flex-col items-center justify-center"
       >
         <AboutSection />

@@ -5,7 +5,6 @@ import { ArrowRight } from 'lucide-react';
 import { Heading, Text } from '../ui/Text';
 
 function ProjectCard({ projectItem }) {
-  console.log(projectItem);
   return (
     <>
       <div className='flex items-center justify-center flex-col border border-zinc-300 dark:border-zinc-700 rounded-xl overflow-hidden hover:bg-zinc-50 dark:hover:bg-zinc-800 duration-300 p-3 lg:p-5 group hover:shadow-md hover:shadow-zinc-400/10 dark:hover:shadow-zinc-600/10'>

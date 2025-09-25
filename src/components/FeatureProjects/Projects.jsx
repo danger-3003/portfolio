@@ -10,9 +10,13 @@ import HeaderImage from '../Header/HeaderImage'
 function FeatureProjects() {
   return (
     <>
-      <HeaderImage />
+      <div className='w-full bg-[#aff2ea] flex items-center justify-center'>
+        <div className='w-full max-w-[80rem]'>
+          <HeaderImage />
+        </div>
+      </div>
       <div id='projectSection' className='w-full relative flex items-center justify-center flex-col pb-10 pt-20 md:pt-24 md:pb-20 px-5 sm:px-8 md:px-10'>
-        <div className='bg-[#aff2ea] w-full max-w-20 h-0.5 rounded-full absolute top-10'></div>
+        <div className='bg-primary-400 dark:bg-[#aff2ea] w-full max-w-20 h-0.5 rounded-full absolute top-10'></div>
         <div className='max-w-[80rem] w-full overflow-hidden flex items-center justify-center flex-col'>
           <div className='w-full'>
             <Heading data-aos="fade-right" className="text-3xl md:text-4xl lg:text-5xl text-center sm:text-left">
