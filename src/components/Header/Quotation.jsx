@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDown } from "lucide-react";
@@ -7,7 +7,7 @@ import LinkButton from "../ui/Button/LinkButton";
 import { Text } from "../ui/Text";
 import { useRouter } from 'next/navigation';
 import { useThemeStore } from "@/store/ThemeStore";
-import CircularText from "../ui/Animation/Texts/CircularText";
+import Particles from "../ui/Particles";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,6 +16,17 @@ export default function Quotation() {
   const contentRef = useRef(null);
   const redRef = useRef(null);
   const theme = useThemeStore(state => state.theme);
+  const [defaultColors, setDefaultColors] = useState(["#ffffff", "#ffffff", "#ffffff"]);
+
+  useEffect(() => {
+    console.log("demo");
+    if (theme === "light") {
+      setDefaultColors(["#191919", "#191919", "#191919"]);
+    }
+    else {
+      setDefaultColors(["#ffffff", "#ffffff", "#ffffff"]);
+    }
+  }, [theme]);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -80,6 +91,19 @@ export default function Quotation() {
     <>
       <div id="homeSection" className="w-full"></div>
       <section ref={sectionRef} className="h-dvh flex items-center justify-center flex-col relative overflow-hidden w-full will-change-transform">
+        <div className="absolute w-screen h-screen z-[1]">
+          <Particles
+            particleColors={defaultColors}
+            particleCount={150}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={70}
+            moveParticlesOnHover={true}
+            alphaParticles={false}
+            disableRotation={false}
+            cameraDistance={30}
+          />
+        </div>
         <div className="bg-cyan-400 size-80 rounded-full blur-[6rem] absolute -mt-20 -ml-[25rem] animate-one"></div>
         <div className="bg-[#D11C9F] size-[26rem] rounded-full blur-[6rem] absolute ml-60 -mt-40 animate-two"></div>
         <div className="bg-[#AC52F2] size-96 rounded-full blur-[6rem] absolute mt-20 animate-three"></div>

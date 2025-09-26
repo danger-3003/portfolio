@@ -105,7 +105,7 @@ function WhatIDoScrollSection() {
                 What I Do?
               </p>
               <div className="absolute bottom-4 xl:bottom-7 group bg-white size-8 xl:size-10 flex items-center justify-center rounded-full">
-                <ArrowDown className="text-black group-hover:text-primary-300" />
+                <ArrowDown className="text-black group-hover:text-primary-300 size-4 sm:size-5" />
               </div>
               {/* SVG Progress + Dashes */}
               <svg
