@@ -129,7 +129,7 @@ function HorizontalScroll() {
           </div>
           {
             ProjectsInfo.map((item, key) => (
-              <div key={key} className="h-screen max-h-[90vh] md:max-h-[35rem] lg:max-h-screen lg:h-dvh flex justify-center items-center lg:flex-shrink-0 w-screen lg:w-1/3">
+              <div key={key} className="h-screen max-h-[90vh] lg:max-h-screen lg:h-dvh flex justify-center items-center lg:flex-shrink-0 w-screen lg:w-1/3">
                 <ProjectSection
                   index={key}
                   projectItem={item}

@@ -12,7 +12,7 @@ export const ProjectsInfo = [
     problemStatement:
       "Design a visually engaging and user-friendly menu card for a coffee shop app that simplifies navigation and enhances customer interaction.",
     description:
-      "The Menu Card project focuses on creating an intuitive interface where users can easily browse through coffee options, combos, and add-ons. Designed with Figma, this interactive layout balances modern design with usability, ensuring customers can quickly locate items and complete their orders. By focusing on clarity and simplicity, the design improves the digital dining experience for coffee lovers while maintaining brand aesthetics.",
+      "Interactive coffee shop menu card designed in Figma. Focused on usability, clarity, and modern aesthetics to simplify browsing, enhance navigation, and improve customer ordering experience.",
     process: [
       "Conducted research on user behavior to identify how customers typically navigate digital menu cards within food and beverage apps.",
       "Outlined the key categories and product hierarchies to create a structured design flow for easy access and reduced cognitive load.",
@@ -65,7 +65,7 @@ export const ProjectsInfo = [
     problemStatement:
       "Develop an interface that allows students and educators to clearly visualize and analyze performance data in an intuitive manner.",
     description:
-      "The Result Insight Hub project is built around the idea of simplifying academic data presentation through clean and interactive design. Using Figma, the interface provides educators and students with a structured layout that highlights grades, trends, and performance insights. The design ensures easy interpretation of data while maintaining visual appeal, allowing users to track progress and make informed decisions efficiently.",
+      "Clean academic dashboard design in Figma. Highlights grades, insights, and trends with structured layouts, improving comprehension, usability, and decision-making for students and educators.",
     process: [
       "Analyzed existing academic dashboards to understand the most effective ways of presenting student performance data.",
       "Identified the pain points in traditional systems, such as cluttered charts and confusing layouts.",
@@ -118,7 +118,7 @@ export const ProjectsInfo = [
     problemStatement:
       "Design a clean and visually appealing email template for a coffee shop app to improve customer engagement and brand communication.",
     description:
-      "The Email Template project delivers a sleek and modern design tailored for digital communication in a coffee shop app. Built in Figma, the layout emphasizes readability, mobile responsiveness, and brand consistency. With a balanced structure of visuals and text, the design ensures effective communication of promotions, updates, and personalized offers, making it a powerful tool for customer retention and marketing.",
+      "Responsive email template design in Figma. Balances visuals and text for clarity, ensuring effective brand communication, promotions, and engagement across devices and email clients.",
     process: [
       "Researched best practices for email marketing design to understand what increases open rates and customer engagement.",
       "Outlined the content structure focusing on headers, promotional banners, and call-to-action buttons.",
@@ -171,7 +171,7 @@ export const ProjectsInfo = [
     problemStatement:
       "Design a simple, intuitive, and systematic interface for a library management platform to improve user accessibility and resource discovery.",
     description:
-      "The Libri Hub project reimagines the digital library experience by creating a clean, structured, and user-friendly interface. Developed in Figma, the design emphasizes seamless navigation and resource categorization, allowing users to quickly browse, borrow, and manage digital content. By focusing on simplicity and functionality, the design enhances the overall user journey, making digital libraries more accessible and engaging.",
+      "Digital library platform design emphasizing simplicity and structure. Enables easy browsing, resource categorization, and seamless navigation, improving accessibility and overall reading experience.",
     process: [
       "Studied user expectations and challenges in navigating digital library platforms.",
       "Outlined the essential features required for quick search, borrowing, and content management.",
@@ -224,7 +224,7 @@ export const ProjectsInfo = [
     problemStatement:
       "Create an intuitive design for a coffee app’s login and signup screens to provide customers with a smooth onboarding experience.",
     description:
-      "The Coffee App Design project is centered around enhancing customer onboarding through simple and engaging login and signup pages. Designed in Figma, the screens balance functionality with aesthetics, ensuring that users can quickly register, log in, and start ordering. The design uses familiar interaction patterns, clean layouts, and brand consistency to deliver a seamless experience that builds customer trust and loyalty.",
+      "Coffee app login/signup screens designed in Figma. Prioritizes usability, familiar patterns, and brand identity for smoother onboarding, reducing friction and enhancing customer experience.",
     process: [
       "Researched mobile app onboarding trends to identify features that maximize user retention.",
       "Outlined essential fields and simplified form structures for quicker registrations.",
@@ -277,7 +277,7 @@ export const ProjectsInfo = [
     problemStatement:
       "Design an elegant and user-focused Shopify e-commerce website with visually appealing layouts and seamless product browsing.",
     description:
-      "The Shopify project delivers a visually attractive and conversion-oriented e-commerce website design. Created in Figma, the layout emphasizes product presentation, intuitive navigation, and responsive design. High-quality imagery, clean typography, and strategically placed calls-to-action ensure an engaging user journey. The design enhances customer experience and empowers businesses to showcase products in a professional and compelling way.",
+      "Conversion-focused Shopify design with engaging visuals, intuitive navigation, and responsive layouts. Enhances product browsing, usability, and user experience across devices.",
     process: [
       "Researched e-commerce design trends and customer behavior to understand what drives conversions.",
       "Outlined the essential shopping journey from homepage browsing to checkout completion.",
@@ -330,7 +330,7 @@ export const ProjectsInfo = [
     problemStatement:
       "Design a creative and interactive portfolio that showcases a professional’s projects with clarity and vibrant visuals.",
     description:
-      "The Friend’s Portfolio Design project focuses on building a visually engaging platform to highlight creative work effectively. Crafted in Figma, the design emphasizes modern layouts, bold visuals, and clear navigation to help showcase projects in an attractive manner. By balancing aesthetics and usability, the portfolio offers a strong digital presence, enabling professionals to present their skills and achievements with confidence.",
+      "Modern portfolio design in Figma featuring bold visuals, structured layouts, and interactive elements. Highlights projects with clarity and improves user engagement across devices.",
     process: [
       "Researched modern portfolio design trends to identify features that stand out visually and functionally.",
       "Outlined content hierarchy to prioritize featured projects, skills, and contact information.",
@@ -383,7 +383,7 @@ export const ProjectsInfo = [
     problemStatement:
       "Create a personal portfolio website to showcase skills, projects, and experience in a clean, professional way.",
     description:
-      "Designed and developed a responsive personal portfolio that highlights work experience, design case studies, and development projects. Optimized for performance, SEO, and accessibility.",
+      "Designed a responsive personal portfolio that highlights my work experience, design case studies, and development projects. Optimized for performanced UI and UX",
     process: [
       "Defined content structure (about, projects, contact).",
       "Wireframed and prototyped layout in Figma.",
@@ -433,7 +433,7 @@ export const ProjectsInfo = [
     problemStatement:
       "Build an AI-powered platform showcasing various generative AI tools with interactive demos.",
     description:
-      "Developed a responsive web application that lists AI-powered tools with categories, filters, and demos. Focused on usability, performance, and clean design.",
+      "Responsive web app for exploring generative AI tools. Features categories, filters, and demos with clean UI, smooth UX, and strong performance.",
     process: [
       "Researched popular AI tools and structured database schema.",
       "Designed UI for search, filter, and tool showcase in Figma.",
