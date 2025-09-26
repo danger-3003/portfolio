@@ -3,10 +3,11 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { projectPageInfo } from "@/constants/Projects";
+import { projectPageInfo, ProjectsInfo } from "@/constants/Projects";
 import { Heading } from "../ui/Text";
 import BlurText from "../ui/Animation/Texts/BlurText";
 import { ArrowRight, ArrowDown } from "lucide-react";
+import ProjectSection from "./ProjectSection";
 
 function HorizontalScroll() {
   const sectionRef = useRef(null);
@@ -126,30 +127,16 @@ function HorizontalScroll() {
               </div>
             </div>
           </div>
-          <div className="h-screen px-5 sm:px-8 md:px-10 py-24 max-h-max md:max-h-[30rem] lg:max-h-screen lg:h-dvh flex justify-center items-center bg-red-200 lg:flex-shrink-0 w-screen lg:w-1/3">
-            <h3>Section 1</h3>
-          </div>
-          <div className="h-screen px-5 sm:px-8 md:px-10 py-24 max-h-max md:max-h-[30rem] lg:max-h-screen lg:h-dvh flex justify-center items-center bg-green-200 lg:flex-shrink-0 w-screen lg:w-1/3">
-            <h3>Section 2</h3>
-          </div>
-          <div className="h-screen px-5 sm:px-8 md:px-10 py-24 max-h-max md:max-h-[30rem] lg:max-h-screen lg:h-dvh flex justify-center items-center bg-blue-200 lg:flex-shrink-0 w-screen lg:w-1/3">
-            <h3>Section 3</h3>
-          </div>
-          <div className="h-screen px-5 sm:px-8 md:px-10 py-24 max-h-max md:max-h-[30rem] lg:max-h-screen lg:h-dvh flex justify-center items-center bg-yellow-200 lg:flex-shrink-0 w-screen lg:w-1/3">
-            <h3>Section 4</h3>
-          </div>
-          <div className="h-screen px-5 sm:px-8 md:px-10 py-24 max-h-max md:max-h-[30rem] lg:max-h-screen lg:h-dvh flex justify-center items-center bg-orange-200 lg:flex-shrink-0 w-screen lg:w-1/3">
-            <h3>Section 5</h3>
-          </div>
-          <div className="h-screen px-5 sm:px-8 md:px-10 py-24 max-h-max md:max-h-[30rem] lg:max-h-screen lg:h-dvh flex justify-center items-center bg-pink-200 lg:flex-shrink-0 w-screen lg:w-1/3">
-            <h3>Section 6</h3>
-          </div>
-          <div className="h-screen px-5 sm:px-8 md:px-10 py-24 max-h-max md:max-h-[30rem] lg:max-h-screen lg:h-dvh flex justify-center items-center bg-cyan-200 lg:flex-shrink-0 w-screen lg:w-1/3">
-            <h3>Section 7</h3>
-          </div>
-          <div className="h-screen px-5 sm:px-8 md:px-10 py-24 max-h-max md:max-h-[30rem] lg:max-h-screen lg:h-dvh flex justify-center items-center bg-fuchsia-200 lg:flex-shrink-0 w-screen lg:w-1/3">
-            <h3>Section 8</h3>
-          </div>
+          {
+            ProjectsInfo.map((item, key) => (
+              <div key={key} className="h-screen max-h-[90vh] md:max-h-[35rem] lg:max-h-screen lg:h-dvh flex justify-center items-center lg:flex-shrink-0 w-screen lg:w-1/3">
+                <ProjectSection
+                  index={key}
+                  projectItem={item}
+                />
+              </div>
+            ))
+          }
         </div>
       </div>
     </section>

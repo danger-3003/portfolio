@@ -44,7 +44,7 @@ export const ProjectsInfo = [
           "Discover a user-friendly coffee menu card design that improves navigation, ordering, and customer experience in digital food apps.",
         url: `${baseUrl}/projects/menu-card`,
         type: "website",
-        siteName: "Rever",
+        siteName: "Hima Varsha | Portfolio",
         images: [
           {
             url: "/assets/projects/menuCard.png",
@@ -56,7 +56,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Rever",
+        site_name: "Hima Varsha | Portfolio",
       },
     },
   },
@@ -97,7 +97,7 @@ export const ProjectsInfo = [
           "Explore an intuitive results dashboard for students and educators. Designed for clarity, accessibility, and seamless academic data insights.",
         url: `${baseUrl}/projects/result-insight-hub`,
         type: "website",
-        siteName: "Rever",
+        siteName: "Hima Varsha | Portfolio",
         images: [
           {
             url: "/assets/projects/rih.png",
@@ -109,7 +109,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Rever",
+        site_name: "Hima Varsha | Portfolio",
       },
     },
   },
@@ -150,7 +150,7 @@ export const ProjectsInfo = [
           "A responsive and engaging email template designed for coffee shop apps. Enhances communication and customer experience.",
         url: `${baseUrl}/projects/email-template`,
         type: "website",
-        siteName: "Rever",
+        siteName: "Hima Varsha | Portfolio",
         images: [
           {
             url: "/assets/projects/emailTemplate.svg",
@@ -162,7 +162,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Rever",
+        site_name: "Hima Varsha | Portfolio",
       },
     },
   },
@@ -203,7 +203,7 @@ export const ProjectsInfo = [
           "A modern and simple library platform design that improves navigation, discovery, and user accessibility in digital libraries.",
         url: `${baseUrl}/projects/libri-hub`,
         type: "website",
-        siteName: "Rever",
+        siteName: "Hima Varsha | Portfolio",
         images: [
           {
             url: "/assets/projects/libriHub.png",
@@ -215,7 +215,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Rever",
+        site_name: "Hima Varsha | Portfolio",
       },
     },
   },
@@ -256,7 +256,7 @@ export const ProjectsInfo = [
           "A clean and user-friendly login/signup flow for a coffee app. Designed to reduce friction and enhance onboarding.",
         url: `${baseUrl}/projects/coffee-app-design`,
         type: "website",
-        siteName: "Rever",
+        siteName: "Hima Varsha | Portfolio",
         images: [
           {
             url: "/assets/projects/coffeeApp.png",
@@ -268,7 +268,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Rever",
+        site_name: "Hima Varsha | Portfolio",
       },
     },
   },
@@ -309,7 +309,7 @@ export const ProjectsInfo = [
           "A modern Shopify e-commerce design that improves shopping journeys, usability, and customer experience.",
         url: `${baseUrl}/projects/shopify`,
         type: "website",
-        siteName: "Rever",
+        siteName: "Hima Varsha | Portfolio",
         images: [
           {
             url: "/assets/projects/shopify.png",
@@ -321,7 +321,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Rever",
+        site_name: "Hima Varsha | Portfolio",
       },
     },
   },
@@ -362,7 +362,7 @@ export const ProjectsInfo = [
           "An engaging portfolio design with modern layouts, visuals, and interactive elements. Perfect for showcasing professional projects.",
         url: `${baseUrl}/projects/friends-portfolio-design`,
         type: "website",
-        siteName: "Rever",
+        siteName: "Hima Varsha | Portfolio",
         images: [
           {
             url: "/assets/projects/sumanthPortfolio.png",
@@ -374,7 +374,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Rever",
+        site_name: "Hima Varsha | Portfolio",
       },
     },
   },
@@ -412,7 +412,7 @@ export const ProjectsInfo = [
           "A professional, responsive portfolio built with Next.js and Tailwind CSS. Showcasing projects, experience, and design case studies.",
         url: `${baseUrl}/projects/my-portfolio`,
         type: "website",
-        siteName: "Rever",
+        siteName: "Hima Varsha | Portfolio",
         images: [
           {
             url: "/assets/projects/portfolio.png",
@@ -424,7 +424,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Rever",
+        site_name: "Hima Varsha | Portfolio",
       },
     },
   },
@@ -462,7 +462,7 @@ export const ProjectsInfo = [
           "A modern hub for exploring generative AI tools with categories, filters, and live demos. Built with Next.js and Tailwind CSS.",
         url: `${baseUrl}/projects/genaitools`,
         type: "website",
-        siteName: "Rever",
+        siteName: "Hima Varsha | Portfolio",
         images: [
           {
             url: "/assets/projects/genaitools.png",
@@ -474,7 +474,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Rever",
+        site_name: "Hima Varsha | Portfolio",
       },
     },
   }
