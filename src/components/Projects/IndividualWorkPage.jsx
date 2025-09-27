@@ -30,10 +30,10 @@ function IndividualWorkPage({ project }) {
             </div>
             <div className='flex items-start justify-start flex-col gap-3'>
               <p className="text-xl sm:text-2xl font-semibold font-nunito pointer-events-none">Process</p>
-              <ul className='list-disc list-inside'>
+              <ul className='list-disc list-outside ml-4'>
                 {
                   project.process.map((item, key) => (
-                    <li key={key} className='text-sm sm:text-base font-nunito font-light pointer-events-none'>
+                    <li key={key} className='py-1 text-sm sm:text-base font-nunito font-light pointer-events-none'>
                       {item}
                     </li>
                   ))
