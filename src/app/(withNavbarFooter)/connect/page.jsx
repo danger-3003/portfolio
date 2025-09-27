@@ -1,12 +1,12 @@
 "use client"
 
-import ProjectsPage from '@/web-pages/Projects'
+import Connect from '@/web-pages/Connect'
 import React from 'react'
 
 function page() {
   return (
     <>
-      <ProjectsPage />
+      <Connect />
     </>
   )
 }

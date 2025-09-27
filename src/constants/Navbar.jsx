@@ -50,7 +50,7 @@ export function useNavbarUrls() {
     },
     {
       title: "Connect",
-      click: () => scrollOrNavigate("connectSection"),
+      click: () => window.open("/connect", "_self", "noopener,noreferrer"),
     }
   ];
 

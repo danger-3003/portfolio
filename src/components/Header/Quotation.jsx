@@ -19,7 +19,6 @@ export default function Quotation() {
   const [defaultColors, setDefaultColors] = useState(["#ffffff", "#ffffff", "#ffffff"]);
 
   useEffect(() => {
-    console.log("demo");
     if (theme === "light") {
       setDefaultColors(["#191919", "#191919", "#191919"]);
     }
@@ -112,7 +111,7 @@ export default function Quotation() {
           className="w-1 h-1 bg-background rounded-full z-[15] opacity-0 relative overflow-hidden flex items-center justify-center will-change-transform"
         >
           {/* This inner wrapper stays constant */}
-          <div className="absolute flex items-center justify-center w-full max-w-[80rem]">
+          <div className="absolute flex items-center justify-center w-full max-w-[70rem]">
             <div className="h-dvh w-full relative flex items-center justify-center flex-col px-5 sm:px-8 md:px-10 bg-background">
               <div className="text-center">
                 <Text data-aos="fade-up" className="text-xl sm:text-2xl md:text-3xl font-semibold text-text custom-transition">

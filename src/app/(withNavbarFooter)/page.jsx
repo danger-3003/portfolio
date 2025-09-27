@@ -1,5 +1,5 @@
 import React from 'react'
-import Home from '@/pages/Home';
+import Home from '@/web-pages/Home';
 import About from '@/components/About';
 import Projects from '@/components/FeatureProjects';
 

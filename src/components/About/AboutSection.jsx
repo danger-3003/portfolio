@@ -17,7 +17,7 @@ function AboutSection() {
     <>
       <div id="aboutSection" className='w-full relative flex items-center justify-center flex-col pb-10 pt-16 md:py-20 px-5 sm:px-8 md:px-10'>
         <div className='bg-primary-400 dark:bg-[#aff2ea] w-full max-w-20 h-0.5 rounded-full absolute top-2'></div>
-        <div className='max-w-[80rem] w-full overflow-hidden'>
+        <div className='max-w-[70rem] w-full overflow-hidden'>
           <div className='w-full flex items-center justify-center flex-col-reverse md:flex-row gap-10 lg:gap-32'>
             <div className='sm:basis-[60%] lg:basis-2/3 flex items-start justify-start flex-col gap-7 lg:gap-10'>
               <Heading data-aos="fade-right" className="text-3xl md:text-4xl lg:text-5xl">Who I Am?</Heading>

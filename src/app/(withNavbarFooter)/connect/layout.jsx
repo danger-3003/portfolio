@@ -1,8 +1,8 @@
 import { MetaData } from "@/constants/Metadata";
 
-export const metadata = MetaData["work"];
+export const metadata = MetaData["connect"];
 
-export default function MyWorkLayout({ children }) {
+export default function ConnectLayout({ children }) {
   return (
     <div>
       {children}

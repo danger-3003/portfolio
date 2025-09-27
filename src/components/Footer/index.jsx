@@ -18,7 +18,7 @@ function Footer() {
       <div className='relative'>
         <div className=''>
           <div className='bg-slate-100 dark:bg-[#1f1f21] flex items-center justify-center flex-col pt-20 pb-5 px-5 sm:px-8 md:px-10 w-full'>
-            <div className='max-w-[80rem] w-full'>
+            <div className='max-w-[70rem] w-full'>
               <div className='flex items-center justify-center w-full flex-col gap-5'>
                 <div className='flex items-center sm:items-start justify-between flex-col sm:flex-row w-full gap-5'>
                   <div className='w-full max-w-80 md:max-w-96'>
@@ -49,7 +49,7 @@ function Footer() {
                   </IconButton>
                   <IconButton
                     className="flex items-center justify-center size-10 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition"
-                    onClick={() => { console.log("Linkedin") }}
+                    onClick={() => { console.log("Behance") }}
                   >
                     <Figma className='size-[60%] text-primary-300 group-hover:text-background dark:group-hover:text-black dark:text-white custom-transition' />
                   </IconButton>
@@ -62,8 +62,8 @@ function Footer() {
           </div>
         </div>
         <div className='sticky -z-10 bottom-0 pt-5 pb-20 sm:py-10 flex items-center justify-center bg-slate-200 dark:bg-zinc-800/20 w-full'>
-          <div className='max-w-[80rem] w-full flex items-center justify-center'>
-            <p className="text-[14.5vw] xl:text-[13rem] leading-none truncate font-poppins text-slate-400 dark:text-zinc-600">
+          <div className='max-w-[70rem] w-full flex items-center justify-center'>
+            <p className="text-[14.5vw] xl:text-[12rem] leading-none truncate font-poppins text-slate-400 dark:text-zinc-600">
               Hima Varsha
             </p>
           </div>
