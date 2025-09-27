@@ -142,16 +142,20 @@ export default function Quotation() {
                 data-aos-delay="300"
                 className="flex items-center justify-center gap-5 mt-5 md:mt-10"
               >
-                <LinkButton
-                  target={"_blank"}
-                  href={"/assets/profile/HimaVarsha.pdf"}
-                  text={"Resume"}
-                />
-                <LinkButton
-                  target={""}
-                  onClick={handleNavigate}
-                  text={"My work"}
-                />
+                <div className="overflow-hidden rounded-full w-min">
+                  <LinkButton
+                    target={"_blank"}
+                    href={"/assets/profile/HimaVarsha.pdf"}
+                    text={"Resume"}
+                  />
+                </div>
+                <div className="overflow-hidden rounded-full w-min">
+                  <LinkButton
+                    target={""}
+                    onClick={handleNavigate}
+                    text={"My work"}
+                  />
+                </div>
               </div>
               <div className='absolute bottom-0 flex items-center justify-center mb-16 sm:mb-5 font-nunito text-sm tracking-widest'>
                 <div className="flex items-center justify-center">
