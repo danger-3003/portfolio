@@ -118,7 +118,7 @@ function HorizontalScroll() {
                 </div>
                 <div className="w-full lg:w-auto mb-12 lg:mb-0">
                   <div className='flex justify-center sm:justify-end items-start lg:justify-start w-full lg:w-auto'>
-                    <a href={"/"} className='flex items-center justify-center group/button-group gap-2 bg-text text-background cursor-pointer text-[13px] font-nunito rounded-md px-3 pb-[2px] pt-[2.5px]'>
+                    <a href={"/connect"} className='flex items-center justify-center group/button-group gap-2 bg-text text-background cursor-pointer text-[13px] font-nunito rounded-md px-3 pb-[2px] pt-[2.5px]'>
                       Connect
                       <ArrowRight width={14} className='group-hover/button-group:rotate-0 -rotate-45 duration-300' />
                     </a>

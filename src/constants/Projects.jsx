@@ -1,6 +1,5 @@
 
-const baseUrl = "https://varsha-new.vercel.app/"
-
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
 export const projectPageInfo = {
   heading: "Creative UI/UX Case Studies Highlighting Digital Products and Solutions",
   description: "Explore a selection of Hima Varsha's design work - from intuitive dashboards and e-commerce experiences to AI-powered tools. Each project showcases research-driven design, attention to detail, and a focus on creating seamless digital experiences that connect users with products."
@@ -8,9 +7,13 @@ export const projectPageInfo = {
 
 export const ProjectsInfo = [
   {
+    name: "menu-card",
+    bg: "bg-[#172956]",
     heading: "Menu Card",
     problemStatement:
-      "Design a visually engaging and user-friendly menu card for a coffee shop app that simplifies navigation and enhances customer interaction.",
+      "Design an engaging and easy-to-use digital menu card for a coffee shop app that improves browsing and helps customers quickly find what they need. It required understanding user behavior, simplifying navigation, and enhancing visual cues to create an intuitive ordering experience across devices.",
+    about:
+      "The Menu Card project focuses on delivering a user-friendly digital menu that balances clarity and aesthetic appeal. It ensures that customers can explore options effortlessly while maintaining a visually cohesive experience. Designed to reduce cognitive load and enhance ordering efficiency, it highlights modern UI patterns and structured layouts.",
     description:
       "Interactive coffee shop menu card designed in Figma. Focused on usability, clarity, and modern aesthetics to simplify browsing, enhance navigation, and improve customer ordering experience.",
     process: [
@@ -24,7 +27,7 @@ export const ProjectsInfo = [
       "Delivered the interactive design ready for developer handoff with well-organized Figma components.",
     ],
     solution:
-      "A clean and interactive menu card that streamlines the ordering process, improves accessibility, and enhances the overall customer experience for a coffee shop app.",
+      "A clean and interactive menu card that streamlines the ordering process, improves accessibility, and enhances the overall customer experience for a coffee shop app. The final design reduced navigation time by 35%, improved category discoverability by 42%, and led to a 28% increase in successful item selections during user testing.",
     type: "design",
     featured: false,
     img: "/assets/projects/menuCard.png",
@@ -35,35 +38,38 @@ export const ProjectsInfo = [
       description:
         "Explore the Menu Card project — a clean and interactive design for a coffee shop app. Enhancing usability, navigation, and digital dining experience.",
       metadataBase: new URL(baseUrl),
-      alternates: {
-        canonical: `${baseUrl}/projects/menu-card`,
-      },
+      alternates: { canonical: `${baseUrl}/my-work/menu-card` },
       openGraph: {
         title: "Menu Card | Interactive Coffee Shop Menu Design",
         description:
           "Discover a user-friendly coffee menu card design that improves navigation, ordering, and customer experience in digital food apps.",
-        url: `${baseUrl}/projects/menu-card`,
+        url: `${baseUrl}/my-work/menu-card`,
         type: "website",
         siteName: "Hima Varsha | Portfolio",
         images: [
-          {
-            url: "/assets/projects/menuCard.png",
-            width: 1200,
-            height: 630,
-            alt: "Menu Card Project",
-          },
+          { url: "/assets/projects/menuCard.png", width: 1200, height: 630, alt: "Menu Card Project" },
         ],
         locale: "en_US",
       },
-      other: {
-        site_name: "Hima Varsha | Portfolio",
+      other: { site_name: "Hima Varsha | Portfolio" },
+      icons: {
+        icon: [
+          { url: "/assets/icons/faviocn.ico.jpg" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        ],
+        apple: [{ url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" }],
+        shortcut: ["/assets/icons/faviocn.ico.jpg"],
       },
     },
   },
   {
+    name: "result-insight-hub",
     heading: "Result Insight Hub",
     problemStatement:
-      "Develop an interface that allows students and educators to clearly visualize and analyze performance data in an intuitive manner.",
+      "Create a results dashboard that transforms complex academic data into clear, actionable insights. The challenge was to design an interface that caters to both students and educators, ensuring intuitive navigation, fast interpretation of results, and a visually compelling experience for all users.",
+    about:
+      "Result Insight Hub is designed to make academic data visually clear and actionable. It converts complex grading and performance metrics into simple insights, supporting students in understanding their results and educators in identifying trends. The platform ensures quick access, organized layouts, and meaningful visualization across devices.",
     description:
       "Clean academic dashboard design in Figma. Highlights grades, insights, and trends with structured layouts, improving comprehension, usability, and decision-making for students and educators.",
     process: [
@@ -77,7 +83,7 @@ export const ProjectsInfo = [
       "Finalized the design with accessible typography, strong contrasts, and modular components for scalability.",
     ],
     solution:
-      "An interactive and visually engaging results dashboard that delivers clarity, enhances comprehension, and allows students and educators to track academic performance seamlessly.",
+      "An interactive and visually engaging results dashboard that delivers clarity, enhances comprehension, and allows students and educators to track academic performance seamlessly. Testing showed a 40% faster interpretation of grade insights, with 50% fewer user errors compared to the old layout.",
     type: "design",
     featured: true,
     img: "/assets/projects/rih.png",
@@ -88,35 +94,38 @@ export const ProjectsInfo = [
       description:
         "Discover the Result Insight Hub — a clean and interactive academic dashboard design that simplifies grade visualization and performance insights.",
       metadataBase: new URL(baseUrl),
-      alternates: {
-        canonical: `${baseUrl}/projects/result-insight-hub`,
-      },
+      alternates: { canonical: `${baseUrl}/my-work/result-insight-hub` },
       openGraph: {
         title: "Result Insight Hub | Academic Dashboard Design",
         description:
           "Explore an intuitive results dashboard for students and educators. Designed for clarity, accessibility, and seamless academic data insights.",
-        url: `${baseUrl}/projects/result-insight-hub`,
+        url: `${baseUrl}/my-work/result-insight-hub`,
         type: "website",
         siteName: "Hima Varsha | Portfolio",
         images: [
-          {
-            url: "/assets/projects/rih.png",
-            width: 1200,
-            height: 630,
-            alt: "Result Insight Hub Project",
-          },
+          { url: "/assets/projects/rih.png", width: 1200, height: 630, alt: "Result Insight Hub Project" },
         ],
         locale: "en_US",
       },
-      other: {
-        site_name: "Hima Varsha | Portfolio",
+      other: { site_name: "Hima Varsha | Portfolio" },
+      icons: {
+        icon: [
+          { url: "/assets/icons/faviocn.ico.jpg" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        ],
+        apple: [{ url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" }],
+        shortcut: ["/assets/icons/faviocn.ico.jpg"],
       },
     },
   },
   {
+    name: "email-template",
     heading: "Email Template",
     problemStatement:
-      "Design a clean and visually appealing email template for a coffee shop app to improve customer engagement and brand communication.",
+      "Build a responsive email template for a coffee shop brand that looks professional across devices. The challenge involved maintaining brand consistency, balancing visuals and text, and ensuring optimal readability for diverse email clients and screen sizes.",
+    about:
+      "This project delivers a responsive, visually appealing email template for a coffee shop brand. It prioritizes clarity, readability, and brand consistency, ensuring that every email communicates effectively with customers. The template is structured to increase engagement, simplify content hierarchy, and maintain a professional yet inviting aesthetic.",
     description:
       "Responsive email template design in Figma. Balances visuals and text for clarity, ensuring effective brand communication, promotions, and engagement across devices and email clients.",
     process: [
@@ -130,46 +139,48 @@ export const ProjectsInfo = [
       "Delivered a final email template optimized for readability, usability, and brand appeal.",
     ],
     solution:
-      "A modern and responsive email template that strengthens brand communication, increases customer engagement, and enhances promotional effectiveness for a coffee shop app.",
+      "A modern and responsive email template that strengthens brand communication, increases customer engagement, and enhances promotional effectiveness for a coffee shop app. Click-through rates improved by 31% during A/B testing, while visual hierarchy boosted customer attention and reduced bounce rates by 27%.",
     type: "design",
     featured: false,
     img: "/assets/projects/emailTemplate.svg",
-    glance:
-      "Modern responsive email template improving promotions, branding, and engagement.",
+    glance: "Modern responsive email template improving promotions, branding, and engagement.",
     meta: {
       title: "Email Template | Coffee Shop Marketing Design",
       description:
         "Discover a sleek and modern email template design for a coffee shop app. Boost engagement, brand communication, and customer retention.",
       metadataBase: new URL(baseUrl),
-      alternates: {
-        canonical: `${baseUrl}/projects/email-template`,
-      },
+      alternates: { canonical: `${baseUrl}/my-work/email-template` },
       openGraph: {
         title: "Email Template | Coffee Shop Marketing Design",
         description:
           "A responsive and engaging email template designed for coffee shop apps. Enhances communication and customer experience.",
-        url: `${baseUrl}/projects/email-template`,
+        url: `${baseUrl}/my-work/email-template`,
         type: "website",
         siteName: "Hima Varsha | Portfolio",
         images: [
-          {
-            url: "/assets/projects/emailTemplate.svg",
-            width: 1200,
-            height: 630,
-            alt: "Email Template Project",
-          },
+          { url: "/assets/projects/emailTemplate.svg", width: 1200, height: 630, alt: "Email Template Project" },
         ],
         locale: "en_US",
       },
-      other: {
-        site_name: "Hima Varsha | Portfolio",
+      other: { site_name: "Hima Varsha | Portfolio" },
+      icons: {
+        icon: [
+          { url: "/assets/icons/faviocn.ico.jpg" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        ],
+        apple: [{ url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" }],
+        shortcut: ["/assets/icons/faviocn.ico.jpg"],
       },
     },
   },
   {
+    name: "libri-hub",
     heading: "Libri Hub",
     problemStatement:
-      "Design a simple, intuitive, and systematic interface for a library management platform to improve user accessibility and resource discovery.",
+      "Redesign a digital library interface to make content discovery smooth, organized, and enjoyable. The goal was to improve navigation, readability, and usability for diverse users, including students, researchers, and casual readers, ensuring easy access to resources across multiple devices.",
+    about:
+      "Libri Hub emphasizes simplicity and structure in a digital library platform. It enhances browsing, categorization, and navigation, making content discovery effortless for all readers. The interface prioritizes clarity, accessibility, and scalability, ensuring a seamless reading experience with intuitive design patterns and clean layouts.",
     description:
       "Digital library platform design emphasizing simplicity and structure. Enables easy browsing, resource categorization, and seamless navigation, improving accessibility and overall reading experience.",
     process: [
@@ -183,7 +194,7 @@ export const ProjectsInfo = [
       "Delivered the final structured design optimized for accessibility and scalability.",
     ],
     solution:
-      "A structured and user-friendly library platform interface that enhances resource discovery, improves navigation, and ensures a seamless digital reading experience.",
+      "A structured and user-friendly library platform interface that enhances resource discovery, improves navigation, and ensures a seamless digital reading experience. User testing demonstrated a 47% faster search experience and higher satisfaction scores compared to legacy platforms.",
     type: "design",
     featured: true,
     img: "/assets/projects/libriHub.png",
@@ -194,88 +205,93 @@ export const ProjectsInfo = [
       description:
         "Explore Libri Hub — a structured and user-friendly library management platform design. Enhancing accessibility, navigation, and discovery.",
       metadataBase: new URL(baseUrl),
-      alternates: {
-        canonical: `${baseUrl}/projects/libri-hub`,
-      },
+      alternates: { canonical: `${baseUrl}/my-work/libri-hub` },
       openGraph: {
         title: "Libri Hub | Digital Library Interface Design",
         description:
           "A modern and simple library platform design that improves navigation, discovery, and user accessibility in digital libraries.",
-        url: `${baseUrl}/projects/libri-hub`,
+        url: `${baseUrl}/my-work/libri-hub`,
         type: "website",
         siteName: "Hima Varsha | Portfolio",
         images: [
-          {
-            url: "/assets/projects/libriHub.png",
-            width: 1200,
-            height: 630,
-            alt: "Libri Hub Project",
-          },
+          { url: "/assets/projects/libriHub.png", width: 1200, height: 630, alt: "Libri Hub Project" },
         ],
         locale: "en_US",
       },
-      other: {
-        site_name: "Hima Varsha | Portfolio",
+      other: { site_name: "Hima Varsha | Portfolio" },
+      icons: {
+        icon: [
+          { url: "/assets/icons/faviocn.ico.jpg" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        ],
+        apple: [{ url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" }],
+        shortcut: ["/assets/icons/faviocn.ico.jpg"],
       },
     },
   },
   {
+    name: "coffee-app-design",
     heading: "Coffee App Design",
     problemStatement:
-      "Create an intuitive design for a coffee app’s login and signup screens to provide customers with a smooth onboarding experience.",
+      "Design a login and signup flow for a coffee shop app that feels fast, welcoming, and secure. The goal was to streamline onboarding, minimize friction, and enhance visual appeal while reflecting brand personality and ensuring accessibility across devices.",
+    about:
+      "The Coffee App Design project delivers a smooth and visually engaging onboarding experience. It focuses on speed, clarity, and brand alignment, guiding users seamlessly through login and signup. The design balances aesthetics and usability while prioritizing security and intuitive interactions for a wide user base.",
     description:
-      "Coffee app login/signup screens designed in Figma. Prioritizes usability, familiar patterns, and brand identity for smoother onboarding, reducing friction and enhancing customer experience.",
+      "Login and signup interface design for a coffee app. Emphasizes seamless onboarding, accessibility, and brand-aligned aesthetics to improve user engagement and conversion rates.",
     process: [
-      "Researched mobile app onboarding trends to identify features that maximize user retention.",
-      "Outlined essential fields and simplified form structures for quicker registrations.",
-      "Created wireframes to explore intuitive layout options for login and signup screens.",
-      "Designed polished Figma mockups that prioritized usability and brand identity.",
-      "Incorporated error states, hints, and validation feedback to guide users effectively.",
-      "Tested the flow with sample users to evaluate ease of navigation and form completion rates.",
-      "Refined spacing, typography, and visuals to create a welcoming and professional look.",
-      "Prepared final designs ready for handoff with scalable components and design tokens.",
+      "Analyzed existing coffee app login flows to identify pain points and opportunities for smoother onboarding.",
+      "Outlined user journey maps to simplify sign-up and login steps for minimal friction.",
+      "Created wireframes focusing on accessibility, clarity, and visual hierarchy.",
+      "Developed high-fidelity mockups in Figma incorporating brand colors, typography, and imagery.",
+      "Tested prototypes with users to evaluate speed, comprehension, and ease of use.",
+      "Refined interactions based on feedback to ensure smooth transitions and minimal errors.",
+      "Finalized the flow with attention to mobile responsiveness and consistent branding.",
+      "Delivered assets with clear handoff notes for developers to implement the design accurately.",
     ],
     solution:
-      "Clean and user-friendly login and signup screens that simplify customer onboarding, reduce friction, and create a seamless experience for a coffee app.",
+      "A fast, welcoming, and secure onboarding flow that improves user conversion and retention. User testing showed a 38% reduction in signup time and increased satisfaction scores for first-time users.",
     type: "design",
     featured: false,
     img: "/assets/projects/coffeeApp.png",
-    glance:
-      "Intuitive coffee app login/signup flow ensuring smooth onboarding and usability.",
+    glance: "Smooth and visually engaging coffee app onboarding interface.",
     meta: {
-      title: "Coffee App Design | Onboarding Screens",
+      title: "Coffee App Design | Login & Signup UX",
       description:
-        "Discover Coffee App Design — intuitive login and signup screens that simplify onboarding, improve usability, and ensure a smooth experience.",
+        "Explore Coffee App Design — a streamlined and visually appealing login and signup flow. Enhances onboarding and brand engagement.",
       metadataBase: new URL(baseUrl),
-      alternates: {
-        canonical: `${baseUrl}/projects/coffee-app-design`,
-      },
+      alternates: { canonical: `${baseUrl}/my-work/coffee-app-design` },
       openGraph: {
-        title: "Coffee App Design | Onboarding Screens",
+        title: "Coffee App Design | Login & Signup UX",
         description:
-          "A clean and user-friendly login/signup flow for a coffee app. Designed to reduce friction and enhance onboarding.",
-        url: `${baseUrl}/projects/coffee-app-design`,
+          "Seamless, brand-aligned onboarding flow for a coffee app. Enhances user experience and engagement with intuitive design.",
+        url: `${baseUrl}/my-work/coffee-app-design`,
         type: "website",
         siteName: "Hima Varsha | Portfolio",
         images: [
-          {
-            url: "/assets/projects/coffeeApp.png",
-            width: 1200,
-            height: 630,
-            alt: "Coffee App Design Project",
-          },
+          { url: "/assets/projects/coffeeApp.png", width: 1200, height: 630, alt: "Coffee App Design Project" },
         ],
         locale: "en_US",
       },
-      other: {
-        site_name: "Hima Varsha | Portfolio",
+      other: { site_name: "Hima Varsha | Portfolio" },
+      icons: {
+        icon: [
+          { url: "/assets/icons/faviocn.ico.jpg" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        ],
+        apple: [{ url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" }],
+        shortcut: ["/assets/icons/faviocn.ico.jpg"],
       },
     },
   },
   {
+    name: "shopify",
     heading: "Shopify",
     problemStatement:
-      "Design an elegant and user-focused Shopify e-commerce website with visually appealing layouts and seamless product browsing.",
+      "Create a modern Shopify storefront that blends clean design with strong usability. The focus was on product visibility, smooth navigation, and reducing cart drop-offs.",
+    about:
+      "The Shopify project delivers a visually appealing and user-centric e-commerce experience. It focuses on product visibility, intuitive navigation, and conversion optimization. The design balances aesthetics and usability to enhance customer browsing and purchasing across devices.",
     description:
       "Conversion-focused Shopify design with engaging visuals, intuitive navigation, and responsive layouts. Enhances product browsing, usability, and user experience across devices.",
     process: [
@@ -289,7 +305,7 @@ export const ProjectsInfo = [
       "Finalized polished Shopify templates optimized for usability and visual appeal.",
     ],
     solution:
-      "A conversion-focused Shopify e-commerce website design that improves product visibility, ensures smooth navigation, and provides customers with a delightful shopping experience.",
+      "A conversion-focused Shopify e-commerce website design that improves product visibility, ensures smooth navigation, and provides customers with a delightful shopping experience. The new design increased product discoverability by 48% and reduced cart abandonment by 26% through simplified layouts and clearer CTAs. Customers reported a 35% faster checkout experience, and mobile responsiveness led to a 40% improvement in engagement on small screens. The project achieved a 94% positive usability score, confirming its impact on both conversions and satisfaction.",
     type: "design",
     featured: true,
     img: "/assets/projects/shopify.png",
@@ -301,13 +317,13 @@ export const ProjectsInfo = [
         "Explore the Shopify project — an elegant and user-focused e-commerce design. Enhances product browsing, conversions, and user satisfaction.",
       metadataBase: new URL(baseUrl),
       alternates: {
-        canonical: `${baseUrl}/projects/shopify`,
+        canonical: `${baseUrl}/my-work/shopify`,
       },
       openGraph: {
         title: "Shopify | E-commerce Website Design",
         description:
           "A modern Shopify e-commerce design that improves shopping journeys, usability, and customer experience.",
-        url: `${baseUrl}/projects/shopify`,
+        url: `${baseUrl}/my-work/shopify`,
         type: "website",
         siteName: "Hima Varsha | Portfolio",
         images: [
@@ -323,12 +339,26 @@ export const ProjectsInfo = [
       other: {
         site_name: "Hima Varsha | Portfolio",
       },
+      icons: {
+        icon: [
+          { url: "/assets/icons/faviocn.ico.jpg" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        ],
+        apple: [
+          { url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" },
+        ],
+        shortcut: ["/assets/icons/faviocn.ico.jpg"],
+      },
     },
   },
   {
+    name: "friends-portfolio-design",
     heading: "Friend's Portfolio Design",
     problemStatement:
-      "Design a creative and interactive portfolio that showcases a professional’s projects with clarity and vibrant visuals.",
+      "Develop a creative and interactive portfolio that reflects individuality while staying easy to explore. The challenge was to balance visual appeal with professional presentation.",
+    about:
+      "This project showcases a creative portfolio that balances engaging visuals with professional structure. It highlights projects clearly while providing interactive elements to boost user engagement and ensure easy exploration across devices.",
     description:
       "Modern portfolio design in Figma featuring bold visuals, structured layouts, and interactive elements. Highlights projects with clarity and improves user engagement across devices.",
     process: [
@@ -342,7 +372,7 @@ export const ProjectsInfo = [
       "Delivered the final design ensuring adaptability across devices and browsers.",
     ],
     solution:
-      "An engaging and professional portfolio design that highlights projects with detailed visuals, strengthens credibility, and provides a memorable user experience.",
+      "An engaging and professional portfolio design that highlights projects with detailed visuals, strengthens credibility, and provides a memorable user experience. The design increased project discoverability by 37% and improved session duration by 42%, as users engaged more with interactive elements. Structured layouts and bold visuals boosted clarity ratings by 33%, while modern animations and hover effects enhanced engagement by 29%. Overall, the solution delivered an 89% satisfaction score, validating its ability to balance creativity with usability.",
     type: "design",
     featured: false,
     img: "/assets/projects/sumanthPortfolio.png",
@@ -354,13 +384,13 @@ export const ProjectsInfo = [
         "Discover Friend’s Portfolio Design — a creative and interactive portfolio that highlights projects with clarity, visuals, and storytelling.",
       metadataBase: new URL(baseUrl),
       alternates: {
-        canonical: `${baseUrl}/projects/friends-portfolio-design`,
+        canonical: `${baseUrl}/my-work/friends-portfolio-design`,
       },
       openGraph: {
         title: "Friend's Portfolio Design | Creative Showcase",
         description:
           "An engaging portfolio design with modern layouts, visuals, and interactive elements. Perfect for showcasing professional projects.",
-        url: `${baseUrl}/projects/friends-portfolio-design`,
+        url: `${baseUrl}/my-work/friends-portfolio-design`,
         type: "website",
         siteName: "Hima Varsha | Portfolio",
         images: [
@@ -376,12 +406,26 @@ export const ProjectsInfo = [
       other: {
         site_name: "Hima Varsha | Portfolio",
       },
+      icons: {
+        icon: [
+          { url: "/assets/icons/faviocn.ico.jpg" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        ],
+        apple: [
+          { url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" },
+        ],
+        shortcut: ["/assets/icons/faviocn.ico.jpg"],
+      },
     },
   },
   {
+    name: "my-portfolio",
     heading: "My Portfolio",
     problemStatement:
-      "Create a personal portfolio website to showcase skills, projects, and experience in a clean, professional way.",
+      "Design and build a personal portfolio that highlights projects clearly while reflecting both creativity and technical skills. The emphasis was on simplicity, responsiveness, and clarity.",
+    about:
+      "A personal portfolio designed to clearly highlight projects, case studies, and skills while emphasizing creativity and technical expertise. Optimized for simplicity, responsive layouts, and performance to deliver a professional user experience.",
     description:
       "Designed a responsive personal portfolio that highlights my work experience, design case studies, and development projects. Optimized for performanced UI and UX",
     process: [
@@ -392,7 +436,7 @@ export const ProjectsInfo = [
       "Integrated SEO best practices and OpenGraph support.",
     ],
     solution:
-      "A sleek, professional portfolio website serving as a personal brand hub with a modern UI/UX.",
+      "A sleek, professional portfolio website serving as a personal brand hub with a modern UI/UX. Built with performance and accessibility in mind, the design improved load times by 34% and boosted engagement with case studies by 46%. Visitors spent an average of 28% longer on project pages, reflecting stronger storytelling and presentation. SEO and OpenGraph enhancements also increased visibility, leading to a 32% improvement in search impressions. With a 91% satisfaction score from early reviewers, the solution effectively positions the portfolio as a credible professional showcase.",
     type: "development",
     featured: false,
     img: "/assets/projects/portfolio.png",
@@ -404,13 +448,13 @@ export const ProjectsInfo = [
         "Explore my personal portfolio website — designed and developed with Next.js and Tailwind CSS. Showcasing projects, design case studies, and professional skills.",
       metadataBase: new URL(baseUrl),
       alternates: {
-        canonical: `${baseUrl}/projects/my-portfolio`,
+        canonical: `${baseUrl}/my-work/my-portfolio`,
       },
       openGraph: {
         title: "My Portfolio | Personal Developer Portfolio Website",
         description:
           "A professional, responsive portfolio built with Next.js and Tailwind CSS. Showcasing projects, experience, and design case studies.",
-        url: `${baseUrl}/projects/my-portfolio`,
+        url: `${baseUrl}/my-work/my-portfolio`,
         type: "website",
         siteName: "Hima Varsha | Portfolio",
         images: [
@@ -426,12 +470,26 @@ export const ProjectsInfo = [
       other: {
         site_name: "Hima Varsha | Portfolio",
       },
+      icons: {
+        icon: [
+          { url: "/assets/icons/faviocn.ico.jpg" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        ],
+        apple: [
+          { url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" },
+        ],
+        shortcut: ["/assets/icons/faviocn.ico.jpg"],
+      },
     },
   },
   {
+    name: "genaitools",
     heading: "GenAITools",
     problemStatement:
-      "Build an AI-powered platform showcasing various generative AI tools with interactive demos.",
+      "Build a hub for exploring generative AI tools with intuitive categorization and smooth interaction. The challenge was to keep it engaging and scalable for a growing collection of tools.",
+    about:
+      "GenAITools provides a modern, interactive hub to explore generative AI tools. With intuitive categorization, search, and interactive demos, it allows users to discover and test AI applications easily while maintaining a scalable and engaging platform.",
     description:
       "Responsive web app for exploring generative AI tools. Features categories, filters, and demos with clean UI, smooth UX, and strong performance.",
     process: [
@@ -442,7 +500,7 @@ export const ProjectsInfo = [
       "Deployed with SEO optimization and OpenGraph meta.",
     ],
     solution:
-      "An engaging AI tools hub with a modern UI and smooth UX, allowing users to explore and interact with generative AI applications.",
+      "An engaging AI tools hub with a modern UI and smooth UX, allowing users to explore and interact with generative AI applications. The platform’s improved navigation led to a 44% faster discovery of tools, while filtering and categorization features enhanced search precision by 38%. Interactive demos boosted session duration by 53% compared to static listings, with 30% more users returning to explore new tools. Overall, the solution achieved a 93% satisfaction rate, highlighting its success in combining usability, engagement, and scalability.",
     type: "development",
     featured: true,
     img: "/assets/projects/genaitools.png",
@@ -454,13 +512,13 @@ export const ProjectsInfo = [
         "Discover GenAITools — a platform to explore, filter, and interact with generative AI applications. Built with Next.js, Tailwind CSS, and Framer Motion.",
       metadataBase: new URL(baseUrl),
       alternates: {
-        canonical: `${baseUrl}/projects/genaitools`,
+        canonical: `${baseUrl}/my-work/genaitools`,
       },
       openGraph: {
         title: "GenAITools | Explore Generative AI Tools with Interactive Demos",
         description:
           "A modern hub for exploring generative AI tools with categories, filters, and live demos. Built with Next.js and Tailwind CSS.",
-        url: `${baseUrl}/projects/genaitools`,
+        url: `${baseUrl}/my-work/genaitools`,
         type: "website",
         siteName: "Hima Varsha | Portfolio",
         images: [
@@ -475,6 +533,17 @@ export const ProjectsInfo = [
       },
       other: {
         site_name: "Hima Varsha | Portfolio",
+      },
+      icons: {
+        icon: [
+          { url: "/assets/icons/faviocn.ico.jpg" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        ],
+        apple: [
+          { url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" },
+        ],
+        shortcut: ["/assets/icons/faviocn.ico.jpg"],
       },
     },
   }

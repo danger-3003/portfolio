@@ -86,7 +86,8 @@ function ProjectSection({ index, projectItem }) {
         {/* Circle Anchor - only visible when hovering (lg and above) */}
         {hovering && (
           <a
-            href="#"
+            href={projectItem.meta.openGraph.url}
+            // href="/my-work/email-template"
             className="absolute z-[5] cursor-none flex items-center justify-center size-10 rounded-full bg-white text-black font-semibold shadow-lg transition-transform duration-700"
             style={{
               left: cursorPos.x,

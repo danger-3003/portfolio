@@ -34,7 +34,7 @@ function Navbar({ scrollProgress }) {
     <>
       <ClickOutside onClickOutside={handleCloseMenu}>
         <div className='fixed top-0 z-20 flex items-center justify-center flex-col w-full bg-gradient-to-l from-white/70 dark:from-[#191919]/50 dark:to-[#191919]/50 to-white/70 backdrop-blur-md shadow-customShadow duration-500 transition-colors'>
-          <nav className='h-16 max-w-[80rem] w-full px-5 relative flex items-center justify-center flex-row'>
+          <nav className='h-16 max-w-[70rem] w-full px-5 relative flex items-center justify-center flex-row'>
             <p className='dark:mix-blend-exclusion hidden sm:block font-sheppard text-3xl bg-gradient-to-r from-fuchsia-400 to-cyan-500 dark:from-fuchsia-500 dark:to-cyan-500 text-transparent bg-clip-text absolute left-5 sm:left-8 pr-2'>
               Hima Varsha
             </p>
@@ -69,7 +69,7 @@ function Navbar({ scrollProgress }) {
                 </IconButton>
                 <IconButton
                   className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition"
-                  onClick={() => { console.log("Linkedin") }}
+                  onClick={() => { console.log("Behance") }}
                 >
                   <Figma className='size-[60%] text-primary-300 group-hover:text-background dark:group-hover:text-black dark:text-white custom-transition' />
                 </IconButton>
@@ -98,7 +98,7 @@ function Navbar({ scrollProgress }) {
           {
             navbarURL.map((item, key) => (
               <div key={key} className='group'>
-                <button onClick={() => (item.click(), handleOpenMenu(), console.log("clicked"))} >
+                <button onClick={() => (item.click(), handleOpenMenu())} >
                   <Text className={`cursor-pointer px-1 -mb-0.5 text-primary-400 hover:font-bold dark:text-slate-300 hover:text-primary-400"} custom-transition`}>
                     <TextScrambler text={item.title} duration={1000} />
                   </Text>

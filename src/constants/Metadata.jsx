@@ -1,5 +1,5 @@
 
-const baseUrl = "https://varsha-new.vercel.app/"; // replace with your actual domain
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
 
 export const MetaData = {
   "homepage": {
@@ -62,44 +62,17 @@ export const MetaData = {
     },
   },
 
-  "about": {
-    title: "About | UI/UX Designer & Creative Professional",
-    description:
-      "Learn more about Hima Varsha, a UI/UX Designer passionate about blending aesthetics with functionality to create seamless and impactful digital experiences.",
-    metadataBase: new URL(baseUrl),
-    alternates: { canonical: `${baseUrl}/about` },
-    openGraph: {
-      title: "About | UI/UX Designer & Creative Professional",
-      description:
-        "Discover Hima Varsha’s design philosophy, approach, and creative journey in crafting user-centric digital experiences.",
-      url: `${baseUrl}/about`,
-      type: "website",
-      siteName: "Hima Varsha Portfolio",
-      images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "About Hima Varsha" }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: "About | UI/UX Designer & Creative Professional",
-      description:
-        "Get to know Hima Varsha and her passion for design, storytelling, and creating meaningful user experiences.",
-      images: ["/opengraph-image.png"],
-    },
-    other: {
-      "site_name": "Hima Varsha Portfolio",
-    }
-  },
-
   "work": {
     title: "My Work | Hima Varsha UI/UX Design Portfolio",
     description:
       "Browse through Hima Varsha’s featured projects including Result Insight Hub, Libri Hub, Shopify, and GenAITools showcasing design expertise and creativity.",
     metadataBase: new URL(baseUrl),
-    alternates: { canonical: `${baseUrl}/work` },
+    alternates: { canonical: `${baseUrl}/my-work` },
     openGraph: {
       title: "My Work | Hima Varsha UI/UX Design Portfolio",
       description:
         "Explore creative UI/UX projects by Hima Varsha, highlighting research-driven design and seamless digital experiences.",
-      url: `${baseUrl}/work`,
+      url: `${baseUrl}/my-work`,
       type: "website",
       siteName: "Hima Varsha Portfolio",
       images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "Hima Varsha Work" }],
@@ -113,7 +86,18 @@ export const MetaData = {
     },
     other: {
       "site_name": "Hima Varsha Portfolio",
-    }
+    },
+    icons: {
+      icon: [
+        { url: "/assets/icons/faviocn.ico.jpg" },
+        { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+        { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+      ],
+      apple: [
+        { url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" },
+      ],
+      shortcut: ["/assets/icons/faviocn.ico.jpg"],
+    },
   },
 
   "connect": {
@@ -140,6 +124,17 @@ export const MetaData = {
     },
     other: {
       "site_name": "Hima Varsha Portfolio",
-    }
+    },
+    icons: {
+      icon: [
+        { url: "/assets/icons/faviocn.ico.jpg" },
+        { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
+        { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+      ],
+      apple: [
+        { url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" },
+      ],
+      shortcut: ["/assets/icons/faviocn.ico.jpg"],
+    },
   },
 };

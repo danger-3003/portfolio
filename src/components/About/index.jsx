@@ -12,7 +12,7 @@ function About() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div
-        className="max-w-[80rem] w-full flex flex-col items-center justify-center"
+        className="max-w-[70rem] w-full flex flex-col items-center justify-center"
       >
         <AboutSection />
       </div>
