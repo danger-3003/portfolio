@@ -34,24 +34,24 @@ export const ProjectsInfo = [
     glance:
       "Interactive coffee menu design enhancing usability, navigation, and experience.",
     meta: {
-      title: "Menu Card | Interactive Coffee Shop Menu Design",
+      title: "Menu Card | Interactive Coffee Shop Menu Design | Hima Varsha Barla",
       description:
         "Explore the Menu Card project — a clean and interactive design for a coffee shop app. Enhancing usability, navigation, and digital dining experience.",
       metadataBase: new URL(baseUrl),
       alternates: { canonical: `${baseUrl}/my-work/menu-card` },
       openGraph: {
-        title: "Menu Card | Interactive Coffee Shop Menu Design",
+        title: "Menu Card | Interactive Coffee Shop Menu Design | Hima Varsha Barla",
         description:
           "Discover a user-friendly coffee menu card design that improves navigation, ordering, and customer experience in digital food apps.",
         url: `${baseUrl}/my-work/menu-card`,
         type: "website",
-        siteName: "Hima Varsha | Portfolio",
+        siteName: "Hima Varsha Barla | Portfolio",
         images: [
           { url: "/assets/projects/menuCard.png", width: 1200, height: 630, alt: "Menu Card Project" },
         ],
         locale: "en_US",
       },
-      other: { site_name: "Hima Varsha | Portfolio" },
+      other: { site_name: "Hima Varsha Barla | Portfolio" },
       icons: {
         icon: [
           { url: "/assets/icons/faviocn.ico.jpg" },
@@ -90,24 +90,24 @@ export const ProjectsInfo = [
     glance:
       "Simplified academic dashboard for visualizing grades, insights, and performance.",
     meta: {
-      title: "Result Insight Hub | Academic Dashboard Design",
+      title: "Result Insight Hub | Academic Dashboard Design | Hima Varsha Barla",
       description:
         "Discover the Result Insight Hub — a clean and interactive academic dashboard design that simplifies grade visualization and performance insights.",
       metadataBase: new URL(baseUrl),
       alternates: { canonical: `${baseUrl}/my-work/result-insight-hub` },
       openGraph: {
-        title: "Result Insight Hub | Academic Dashboard Design",
+        title: "Result Insight Hub | Academic Dashboard Design | Hima Varsha Barla",
         description:
           "Explore an intuitive results dashboard for students and educators. Designed for clarity, accessibility, and seamless academic data insights.",
         url: `${baseUrl}/my-work/result-insight-hub`,
         type: "website",
-        siteName: "Hima Varsha | Portfolio",
+        siteName: "Hima Varsha Barla | Portfolio",
         images: [
           { url: "/assets/projects/rih.png", width: 1200, height: 630, alt: "Result Insight Hub Project" },
         ],
         locale: "en_US",
       },
-      other: { site_name: "Hima Varsha | Portfolio" },
+      other: { site_name: "Hima Varsha Barla | Portfolio" },
       icons: {
         icon: [
           { url: "/assets/icons/faviocn.ico.jpg" },
@@ -145,24 +145,24 @@ export const ProjectsInfo = [
     img: "/assets/projects/emailTemplate.svg",
     glance: "Modern responsive email template improving promotions, branding, and engagement.",
     meta: {
-      title: "Email Template | Coffee Shop Marketing Design",
+      title: "Email Template | Coffee Shop Marketing Design | Hima Varsha Barla",
       description:
         "Discover a sleek and modern email template design for a coffee shop app. Boost engagement, brand communication, and customer retention.",
       metadataBase: new URL(baseUrl),
       alternates: { canonical: `${baseUrl}/my-work/email-template` },
       openGraph: {
-        title: "Email Template | Coffee Shop Marketing Design",
+        title: "Email Template | Coffee Shop Marketing Design | Hima Varsha Barla",
         description:
           "A responsive and engaging email template designed for coffee shop apps. Enhances communication and customer experience.",
         url: `${baseUrl}/my-work/email-template`,
         type: "website",
-        siteName: "Hima Varsha | Portfolio",
+        siteName: "Hima Varsha Barla | Portfolio",
         images: [
           { url: "/assets/projects/emailTemplate.svg", width: 1200, height: 630, alt: "Email Template Project" },
         ],
         locale: "en_US",
       },
-      other: { site_name: "Hima Varsha | Portfolio" },
+      other: { site_name: "Hima Varsha Barla | Portfolio" },
       icons: {
         icon: [
           { url: "/assets/icons/faviocn.ico.jpg" },
@@ -201,24 +201,24 @@ export const ProjectsInfo = [
     glance:
       "Structured digital library interface enhancing accessibility, navigation, and discovery.",
     meta: {
-      title: "Libri Hub | Digital Library Interface Design",
+      title: "Libri Hub | Digital Library Interface Design | Hima Varsha Barla",
       description:
         "Explore Libri Hub — a structured and user-friendly library management platform design. Enhancing accessibility, navigation, and discovery.",
       metadataBase: new URL(baseUrl),
       alternates: { canonical: `${baseUrl}/my-work/libri-hub` },
       openGraph: {
-        title: "Libri Hub | Digital Library Interface Design",
+        title: "Libri Hub | Digital Library Interface Design | Hima Varsha Barla",
         description:
           "A modern and simple library platform design that improves navigation, discovery, and user accessibility in digital libraries.",
         url: `${baseUrl}/my-work/libri-hub`,
         type: "website",
-        siteName: "Hima Varsha | Portfolio",
+        siteName: "Hima Varsha Barla | Portfolio",
         images: [
           { url: "/assets/projects/libriHub.png", width: 1200, height: 630, alt: "Libri Hub Project" },
         ],
         locale: "en_US",
       },
-      other: { site_name: "Hima Varsha | Portfolio" },
+      other: { site_name: "Hima Varsha Barla | Portfolio" },
       icons: {
         icon: [
           { url: "/assets/icons/faviocn.ico.jpg" },
@@ -256,24 +256,24 @@ export const ProjectsInfo = [
     img: "/assets/projects/coffeeApp.png",
     glance: "Smooth and visually engaging coffee app onboarding interface.",
     meta: {
-      title: "Coffee App Design | Login & Signup UX",
+      title: "Coffee App Design | Login & Signup UX | Hima Varsha Barla",
       description:
         "Explore Coffee App Design — a streamlined and visually appealing login and signup flow. Enhances onboarding and brand engagement.",
       metadataBase: new URL(baseUrl),
       alternates: { canonical: `${baseUrl}/my-work/coffee-app-design` },
       openGraph: {
-        title: "Coffee App Design | Login & Signup UX",
+        title: "Coffee App Design | Login & Signup UX | Hima Varsha Barla",
         description:
           "Seamless, brand-aligned onboarding flow for a coffee app. Enhances user experience and engagement with intuitive design.",
         url: `${baseUrl}/my-work/coffee-app-design`,
         type: "website",
-        siteName: "Hima Varsha | Portfolio",
+        siteName: "Hima Varsha Barla | Portfolio",
         images: [
           { url: "/assets/projects/coffeeApp.png", width: 1200, height: 630, alt: "Coffee App Design Project" },
         ],
         locale: "en_US",
       },
-      other: { site_name: "Hima Varsha | Portfolio" },
+      other: { site_name: "Hima Varsha Barla | Portfolio" },
       icons: {
         icon: [
           { url: "/assets/icons/faviocn.ico.jpg" },
@@ -312,7 +312,7 @@ export const ProjectsInfo = [
     glance:
       "Elegant Shopify e-commerce design improving browsing, conversions, and satisfaction.",
     meta: {
-      title: "Shopify | E-commerce Website Design",
+      title: "Shopify | E-commerce Website Design | Hima Varsha Barla",
       description:
         "Explore the Shopify project — an elegant and user-focused e-commerce design. Enhances product browsing, conversions, and user satisfaction.",
       metadataBase: new URL(baseUrl),
@@ -320,12 +320,12 @@ export const ProjectsInfo = [
         canonical: `${baseUrl}/my-work/shopify`,
       },
       openGraph: {
-        title: "Shopify | E-commerce Website Design",
+        title: "Shopify | E-commerce Website Design | Hima Varsha Barla",
         description:
           "A modern Shopify e-commerce design that improves shopping journeys, usability, and customer experience.",
         url: `${baseUrl}/my-work/shopify`,
         type: "website",
-        siteName: "Hima Varsha | Portfolio",
+        siteName: "Hima Varsha Barla | Portfolio",
         images: [
           {
             url: "/assets/projects/shopify.png",
@@ -337,7 +337,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Hima Varsha | Portfolio",
+        site_name: "Hima Varsha Barla | Portfolio",
       },
       icons: {
         icon: [
@@ -379,7 +379,7 @@ export const ProjectsInfo = [
     glance:
       "Creative portfolio interface showcasing projects with clarity, visuals, and engagement.",
     meta: {
-      title: "Friend's Portfolio Design | Creative Showcase",
+      title: "Friend's Portfolio Design | Creative Showcase | Hima Varsha Barla",
       description:
         "Discover Friend’s Portfolio Design — a creative and interactive portfolio that highlights projects with clarity, visuals, and storytelling.",
       metadataBase: new URL(baseUrl),
@@ -387,12 +387,12 @@ export const ProjectsInfo = [
         canonical: `${baseUrl}/my-work/friends-portfolio-design`,
       },
       openGraph: {
-        title: "Friend's Portfolio Design | Creative Showcase",
+        title: "Friend's Portfolio Design | Creative Showcase | Hima Varsha Barla",
         description:
           "An engaging portfolio design with modern layouts, visuals, and interactive elements. Perfect for showcasing professional projects.",
         url: `${baseUrl}/my-work/friends-portfolio-design`,
         type: "website",
-        siteName: "Hima Varsha | Portfolio",
+        siteName: "Hima Varsha Barla | Portfolio",
         images: [
           {
             url: "/assets/projects/sumanthPortfolio.png",
@@ -404,7 +404,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Hima Varsha | Portfolio",
+        site_name: "Hima Varsha Barla | Portfolio",
       },
       icons: {
         icon: [
@@ -443,7 +443,7 @@ export const ProjectsInfo = [
     glance:
       "A sleek, responsive personal portfolio showcasing skills, projects, and experience.",
     meta: {
-      title: "My Portfolio | Personal Developer Portfolio Website",
+      title: "My Portfolio | Personal Developer Portfolio Website | Hima Varsha Barla",
       description:
         "Explore my personal portfolio website — designed and developed with Next.js and Tailwind CSS. Showcasing projects, design case studies, and professional skills.",
       metadataBase: new URL(baseUrl),
@@ -451,12 +451,12 @@ export const ProjectsInfo = [
         canonical: `${baseUrl}/my-work/my-portfolio`,
       },
       openGraph: {
-        title: "My Portfolio | Personal Developer Portfolio Website",
+        title: "My Portfolio | Personal Developer Portfolio Website | Hima Varsha Barla",
         description:
           "A professional, responsive portfolio built with Next.js and Tailwind CSS. Showcasing projects, experience, and design case studies.",
         url: `${baseUrl}/my-work/my-portfolio`,
         type: "website",
-        siteName: "Hima Varsha | Portfolio",
+        siteName: "Hima Varsha Barla | Portfolio",
         images: [
           {
             url: "/assets/projects/portfolio.png",
@@ -468,7 +468,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Hima Varsha | Portfolio",
+        site_name: "Hima Varsha Barla | Portfolio",
       },
       icons: {
         icon: [
@@ -507,7 +507,7 @@ export const ProjectsInfo = [
     glance:
       "A modern AI tools platform showcasing generative AI apps with interactivity and clean UI.",
     meta: {
-      title: "GenAITools | Explore Generative AI Tools with Interactive Demos",
+      title: "GenAITools | Explore Generative AI Tools with Interactive Demos | Hima Varsha Barla",
       description:
         "Discover GenAITools — a platform to explore, filter, and interact with generative AI applications. Built with Next.js, Tailwind CSS, and Framer Motion.",
       metadataBase: new URL(baseUrl),
@@ -515,12 +515,12 @@ export const ProjectsInfo = [
         canonical: `${baseUrl}/my-work/genaitools`,
       },
       openGraph: {
-        title: "GenAITools | Explore Generative AI Tools with Interactive Demos",
+        title: "GenAITools | Explore Generative AI Tools with Interactive Demos | Hima Varsha Barla",
         description:
           "A modern hub for exploring generative AI tools with categories, filters, and live demos. Built with Next.js and Tailwind CSS.",
         url: `${baseUrl}/my-work/genaitools`,
         type: "website",
-        siteName: "Hima Varsha | Portfolio",
+        siteName: "Hima Varsha Barla | Portfolio",
         images: [
           {
             url: "/assets/projects/genaitools.png",
@@ -532,7 +532,7 @@ export const ProjectsInfo = [
         locale: "en_US",
       },
       other: {
-        site_name: "Hima Varsha | Portfolio",
+        site_name: "Hima Varsha Barla | Portfolio",
       },
       icons: {
         icon: [

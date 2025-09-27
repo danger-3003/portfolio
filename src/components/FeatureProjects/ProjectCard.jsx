@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { ArrowRight } from 'lucide-react';
-import { Heading, Text } from '../ui/Text';
 
 function ProjectCard({ projectItem }) {
   return (
@@ -17,7 +16,7 @@ function ProjectCard({ projectItem }) {
             <img src={projectItem.img} alt={projectItem.heading} className='group-hover:scale-110 duration-300 w-full' />
           </div>
           <div className='flex items-start justify-start w-full'>
-            <a href={"/"} className='flex items-center justify-center group/button-group gap-2 bg-text text-background cursor-pointer text-[13px] font-nunito rounded-md px-3 pb-[2px] pt-[2.5px] mt-5'>
+            <a href={projectItem.meta.openGraph.url} className='flex items-center justify-center group/button-group gap-2 bg-text text-background cursor-pointer text-[13px] font-nunito rounded-md px-3 pb-[2px] pt-[2.5px] mt-5'>
               Explore more
               <ArrowRight width={14} className='group-hover/button-group:rotate-0 -rotate-45 duration-300' />
             </a>

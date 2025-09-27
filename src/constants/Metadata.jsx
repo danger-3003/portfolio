@@ -3,13 +3,13 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
 
 export const MetaData = {
   "homepage": {
-    title: "Hima Varsha | UI/UX Designer Portfolio",
+    title: "Hima Varsha Barla | UI/UX Designer Portfolio",
     description:
       "Explore the creative portfolio of Hima Varsha, a passionate UI/UX Designer who transforms complex ideas into simple, elegant, and user-focused digital experiences.",
     metadataBase: new URL(baseUrl),
     alternates: { canonical: baseUrl },
     openGraph: {
-      title: "Hima Varsha | UI/UX Designer Portfolio",
+      title: "Hima Varsha Barla | UI/UX Designer Portfolio",
       description:
         "Discover Hima Varsha’s portfolio showcasing UI/UX design projects that blend design thinking, storytelling, and creativity.",
       url: baseUrl,
@@ -27,15 +27,21 @@ export const MetaData = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Hima Varsha | UI/UX Designer Portfolio",
+      title: "Hima Varsha Barla | UI/UX Designer Portfolio",
       description:
-        "Discover UI/UX design works and creative projects by Hima Varsha, blending aesthetics with seamless user experiences.",
+        "Discover UI/UX design works and creative projects by Hima Varsha Barla, blending aesthetics with seamless user experiences.",
       images: ["/opengraph-image.png"],
     },
     keywords: [
+      "UI/UX designer",
       "UI/UX designer portfolio",
       "hima varsha",
       "hima varsha barla",
+      "varsha",
+      "hima",
+      "portfolio",
+      "hima varsha portfolio",
+      "hima varsha barla portfolio",
       "creative design",
       "user experience",
       "digital design",
@@ -44,21 +50,21 @@ export const MetaData = {
       "visual storytelling"
     ],
     other: {
-      "site_name": "Hima Varsha | Portfolio",
+      "site_name": "Hima Varsha Barla | Portfolio",
       "author": "Hima Varsha",
       "creator": "Hima Varsha",
       "robots": "index, follow",
     },
     icons: {
       icon: [
-        { url: "/assets/icons/faviocn.ico.jpg" },
-        { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
-        { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        { url: "/assets/icons/favicon.ico.svg" },
+        { url: "/assets/icons/favicon.ico.svg", sizes: "32x32", type: "image/png" },
+        { url: "/assets/icons/favicon.ico.svg", sizes: "16x16", type: "image/png" },
       ],
       apple: [
         { url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" },
       ],
-      shortcut: ["/assets/icons/faviocn.ico.jpg"],
+      shortcut: ["/assets/icons/favicon.ico.svg"],
     },
   },
 
@@ -89,25 +95,25 @@ export const MetaData = {
     },
     icons: {
       icon: [
-        { url: "/assets/icons/faviocn.ico.jpg" },
-        { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
-        { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        { url: "/assets/icons/favicon.ico.svg" },
+        { url: "/assets/icons/favicon.ico.svg", sizes: "32x32", type: "image/png" },
+        { url: "/assets/icons/favicon.ico.svg", sizes: "16x16", type: "image/png" },
       ],
       apple: [
         { url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" },
       ],
-      shortcut: ["/assets/icons/faviocn.ico.jpg"],
+      shortcut: ["/assets/icons/favicon.ico.svg"],
     },
   },
 
   "connect": {
-    title: "Connect with Hima Varsha | UI/UX Designer",
+    title: "Connect with Hima Varsha Barla | UI/UX Designer",
     description:
       "Let’s collaborate! Reach out to Hima Varsha for UI/UX design projects, collaborations, or creative opportunities.",
     metadataBase: new URL(baseUrl),
     alternates: { canonical: `${baseUrl}/connect` },
     openGraph: {
-      title: "Connect with Hima Varsha | UI/UX Designer",
+      title: "Connect with Hima Varsha Barla | UI/UX Designer",
       description:
         "Contact Hima Varsha to discuss UI/UX design opportunities, collaborations, and creative projects.",
       url: `${baseUrl}/connect`,
@@ -117,7 +123,7 @@ export const MetaData = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Connect with Hima Varsha | UI/UX Designer",
+      title: "Connect with Hima Varsha Barla | UI/UX Designer",
       description:
         "Get in touch with Hima Varsha to collaborate on creative design projects and UI/UX opportunities.",
       images: ["/opengraph-image.png"],
@@ -127,14 +133,14 @@ export const MetaData = {
     },
     icons: {
       icon: [
-        { url: "/assets/icons/faviocn.ico.jpg" },
-        { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
-        { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+        { url: "/assets/icons/favicon.ico.svg" },
+        { url: "/assets/icons/favicon.ico.svg", sizes: "32x32", type: "image/png" },
+        { url: "/assets/icons/favicon.ico.svg", sizes: "16x16", type: "image/png" },
       ],
       apple: [
         { url: "/assets/icons/apple-touch-icon.jpg", sizes: "180x180", type: "image/png" },
       ],
-      shortcut: ["/assets/icons/faviocn.ico.jpg"],
+      shortcut: ["/assets/icons/favicon.ico.svg"],
     },
   },
 };
