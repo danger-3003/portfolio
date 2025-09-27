@@ -53,6 +53,9 @@ function ProjectSection({ index, projectItem }) {
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
       className="w-full h-full relative overflow-hidden group border-t-[1px] lg:border-l-[1px] border-slate-300 dark:border-zinc-800"
+      onClick={() => {
+        window !== undefined && window.open(projectItem.meta.openGraph.url, "_self", "noopener,noreferrer")
+      }}
     >
       {/* Background overlay */}
       <div
@@ -67,8 +70,6 @@ function ProjectSection({ index, projectItem }) {
           backgroundSize: "cover",
         }}
       ></div>
-
-      {/* Text content */}
       <div className={`
         w-full h-full px-5 sm:px-8 md:px-10 py-16 lg:py-24 absolute z-[3] custom-transition
         ${isVisible ? "text-white" : ""}
@@ -83,21 +84,6 @@ function ProjectSection({ index, projectItem }) {
           </Heading>
           <Text>{projectItem.description}</Text>
         </div>
-        {/* Circle Anchor - only visible when hovering (lg and above) */}
-        {hovering && (
-          <a
-            href={projectItem.meta.openGraph.url}
-            // href="/my-work/email-template"
-            className="absolute z-[5] cursor-none flex items-center justify-center size-10 rounded-full bg-white text-black font-semibold shadow-lg transition-transform duration-700"
-            style={{
-              left: cursorPos.x,
-              top: cursorPos.y,
-              transform: "translate(-50%, -50%)",
-            }}
-          >
-            <ArrowRight width={14} className="" />
-          </a>
-        )}
       </div>
     </div>
   )
