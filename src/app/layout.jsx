@@ -27,13 +27,12 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Hima Varsha Barla",
-  "url": "https://yourwebsite.com",
+  "url": process.env.NEXT_PUBLIC_BASE_URL,
   "jobTitle": "UI/UX Designer",
   "description": "UI/UX Designer portfolio of Hima Varsha Barla, showcasing creative digital design projects.",
   "sameAs": [
-    "https://www.linkedin.com/in/hima-varsha-barla",
-    "https://www.behance.net/himavarsha",
-    "https://dribbble.com/himavarsha"
+    "https://www.linkedin.com/in/hima-varsha-barla/",
+    "https://www.behance.net/himavarsha7/",
   ]
 };
 
