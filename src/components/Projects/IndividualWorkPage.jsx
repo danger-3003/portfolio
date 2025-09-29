@@ -1,10 +1,10 @@
 "use client"
 
 import React from 'react'
-import { Heading, Text } from '../ui/Text'
-import { Target, Lightbulb, Zap, CircleCheckBig } from 'lucide-react'
+import { Text } from '../ui/Text'
 
 function IndividualWorkPage({ project }) {
+  console.log(project.bg)
   return (
     <>
       <div className="flex flex-col items-center justify-center">
@@ -14,13 +14,13 @@ function IndividualWorkPage({ project }) {
           <div className='flex items-start justify-center flex-col gap-7 lg:gap-10 pt-6'>
             <div
               data-aos="fade-up"
-              className={`flex items-center justify-center w-full rounded-lg sm:rounded-xl lg:rounded-2xl bg-text`}
+              className={`flex items-center justify-center w-full rounded-lg sm:rounded-xl lg:rounded-2xl ${project.bg} `}
             >
               <img src={project.img} alt={project.heading} className="w-full max-w-[40rem]" />
             </div>
-            <Heading data-aos="fade-right" className="text-3xl md:text-4xl lg:text-5xl">
+            <h1 data-aos="fade-right" className="font-nunito font-semibold pointer-events-none text-3xl md:text-4xl lg:text-5xl">
               {project.heading}
-            </Heading>
+            </h1>
             <div data-aos="fade-right" className='flex items-start justify-start flex-col gap-3 bg-slate-100 dark:bg-[#1f1f21] p-5 md:p-7 rounded-lg sm:rounded-xl lg:rounded-2xl border-l-4 border-primary-400'>
               <p className="text-xl sm:text-2xl font-semibold font-nunito pointer-events-none">Problem Statement</p>
               <Text>{project.problemStatement}</Text>

@@ -69,9 +69,10 @@ function Navbar({ scrollProgress }) {
                 </IconButton>
                 <IconButton
                   className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition"
-                  onClick={() => { console.log("Behance") }}
+                  onClick={() => { typeof window !== "undefined" && window.open("https://www.behance.net/himavarsha7", "_blank") }}
                 >
-                  <Figma className='size-[60%] text-primary-300 group-hover:text-background dark:group-hover:text-black dark:text-white custom-transition' />
+                  <img src="/assets/icons/Behance.png" alt="Behnace" className='size-[60%]' />
+                  {/* <Figma className='size-[60%] text-primary-300 group-hover:text-background dark:group-hover:text-black dark:text-white custom-transition' /> */}
                 </IconButton>
                 <IconButton
                   className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition relative"
@@ -123,9 +124,10 @@ function Navbar({ scrollProgress }) {
             </IconButton>
             <IconButton
               className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition"
-              onClick={() => { console.log("Linkedin") }}
+              onClick={() => { typeof window !== "undefined" && window.open("https://www.behance.net/himavarsha7", "_blank") }}
             >
-              <Figma className='size-[60%] text-primary-300 group-hover:text-background dark:group-hover:text-black dark:text-white custom-transition' />
+              <img src="/assets/icons/Behance.png" alt="Behnace" className='size-[60%]' />
+              {/* <Figma className='size-[60%] text-primary-300 group-hover:text-background dark:group-hover:text-black dark:text-white custom-transition' /> */}
             </IconButton>
             <IconButton
               className="flex items-center justify-center size-8 group hover:bg-primary-300 dark:hover:bg-primary-400 rounded-lg custom-transition relative"

@@ -5,13 +5,13 @@ export const MetaData = {
   "homepage": {
     title: "Hima Varsha Barla | UI/UX Designer Portfolio",
     description:
-      "Explore the creative portfolio of Hima Varsha, a passionate UI/UX Designer who transforms complex ideas into simple, elegant, and user-focused digital experiences.",
+      "Explore the portfolio of Hima Varsha Barla, a UI/UX Designer who transforms complex ideas into simple, user-focused, and visually elegant digital experiences. View Hima Varsha’s portfolio showcasing creative UI/UX design projects.",
     metadataBase: new URL(baseUrl),
     alternates: { canonical: baseUrl },
     openGraph: {
       title: "Hima Varsha Barla | UI/UX Designer Portfolio",
       description:
-        "Discover Hima Varsha’s portfolio showcasing UI/UX design projects that blend design thinking, storytelling, and creativity.",
+        "Explore the portfolio of Hima Varsha Barla, a UI/UX Designer who transforms complex ideas into simple, user-focused, and visually elegant digital experiences. View Hima Varsha’s portfolio showcasing creative UI/UX design projects.",
       url: baseUrl,
       type: "website",
       siteName: "Hima Varsha Portfolio",
@@ -29,7 +29,7 @@ export const MetaData = {
       card: "summary_large_image",
       title: "Hima Varsha Barla | UI/UX Designer Portfolio",
       description:
-        "Discover UI/UX design works and creative projects by Hima Varsha Barla, blending aesthetics with seamless user experiences.",
+        "Explore the portfolio of Hima Varsha Barla, a UI/UX Designer who transforms complex ideas into simple, user-focused, and visually elegant digital experiences. View Hima Varsha’s portfolio showcasing creative UI/UX design projects.",
       images: ["/opengraph-image.png"],
     },
     keywords: [

@@ -8,7 +8,7 @@ export const projectPageInfo = {
 export const ProjectsInfo = [
   {
     name: "menu-card",
-    bg: "bg-[#172956]",
+    // bg: "bg-[#172956]",
     heading: "Menu Card",
     problemStatement:
       "Design an engaging and easy-to-use digital menu card for a coffee shop app that improves browsing and helps customers quickly find what they need. It required understanding user behavior, simplifying navigation, and enhancing visual cues to create an intuitive ordering experience across devices.",
@@ -66,6 +66,7 @@ export const ProjectsInfo = [
   {
     name: "result-insight-hub",
     heading: "Result Insight Hub",
+    // bg: "bg-[#172956]",
     problemStatement:
       "Create a results dashboard that transforms complex academic data into clear, actionable insights. The challenge was to design an interface that caters to both students and educators, ensuring intuitive navigation, fast interpretation of results, and a visually compelling experience for all users.",
     about:

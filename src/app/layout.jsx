@@ -3,6 +3,7 @@ import "./globals.css";
 import LenisWrapper from "@/components/ui/Animation/LenisWrapper";
 import { MetaData } from "@/constants/Metadata";
 import ClickSpark from "@/components/ui/ClickSpark";
+import Script from "next/script";
 
 const poppins = Playfair_Display({
   variable: "--font-poppins",
@@ -22,6 +23,20 @@ const sheppards = Mrs_Sheppards({
   weight: ['400']
 });
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hima Varsha Barla",
+  "url": "https://yourwebsite.com",
+  "jobTitle": "UI/UX Designer",
+  "description": "UI/UX Designer portfolio of Hima Varsha Barla, showcasing creative digital design projects.",
+  "sameAs": [
+    "https://www.linkedin.com/in/hima-varsha-barla",
+    "https://www.behance.net/himavarsha",
+    "https://dribbble.com/himavarsha"
+  ]
+};
+
 // const bitcount = Bitcount_Grid_Double({
 //   variable: "--font-bitcount",
 //   subsets: ["latin"],
@@ -34,6 +49,11 @@ export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning lang="en">
       <head>
+        <Script
+          id="ld-json-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
