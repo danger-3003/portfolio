@@ -117,7 +117,8 @@ export default function Quotation() {
                 <Text data-aos="fade-up" className="text-xl sm:text-2xl md:text-3xl font-semibold text-text custom-transition">
                   Hi There!
                 </Text>
-                <h1
+                <h1 className="hidden">Hima Varsha Barla - UI/UX Designer Portfolio</h1>
+                <h2
                   data-aos="fade-up"
                   data-aos-delay="100"
                   className="font-poppins text-4xl md:text-5xl lg:text-[4rem] leading-10 md:leading-[4rem] w-max"
@@ -126,7 +127,7 @@ export default function Quotation() {
                   <span className="bg-gradient-to-r from-[#AC52F2] to-[#D11C9F] bg-clip-text text-transparent w-max font-semibold tracking-wider">
                     Hima&nbsp;Varsha
                   </span>
-                </h1>
+                </h2>
                 <p
                   data-aos="fade-up"
                   data-aos-delay="200"
